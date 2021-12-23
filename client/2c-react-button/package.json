@@ -1,0 +1,13 @@
+{
+  "name": "2c-react-button",
+  "version": "0.01.010",
+  "author": "8020data",
+  "license": "ISC",
+  "dependencies": {
+     },
+  "scripts": {
+    "start": "index.html",
+    "build": "echo   *** There is no build for 2c-react-button",
+    "prod": "index.html"
+     }
+}
