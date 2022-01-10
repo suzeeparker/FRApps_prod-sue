@@ -4,7 +4,7 @@ export default function App() {
 
   return (
     <div>
-      <h1>Bookkeeper</h1>
+      <h1>Bookkeeper (no API)</h1>
       <nav
         style={{
           borderBottom: "solid 1px",
