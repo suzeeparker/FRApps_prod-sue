@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#  aHost=et217p-nimda-key;
+   aHost=vultr-FormR0-nimda;
                             if [ "$1" != "" ]; then aHost=$1;    fi
    aWebDir=/webs/FRApps;    if [ "$2" != "" ]; then aWebDir=$2=; fi
    aBuild=build;            if [ "$3" != "" ]; then aBuild=$3;   fi
