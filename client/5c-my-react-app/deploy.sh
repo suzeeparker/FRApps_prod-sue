@@ -1,9 +1,9 @@
 #!/bin/bash
 
     aHost=vultr-formr0-nimda;
-                             if [ "$1" != "" ]; then aHost=$1;    fi
-    aWebDir=/webs/FRApps;    if [ "$2" != "" ]; then aWebDir=$2=; fi
-    aBuild=build;            if [ "$3" != "" ]; then aBuild=$3;   fi
+                             if [ "$1" != "" ]; then aHost=$1;     fi
+    aWebDir=/webs/FRApps;    if [ "$2" != "" ]; then aWebDir=$2=;  fi
+    aBuildDir=build;         if [ "$3" != "" ]; then aBuildDir=$3; fi
 
  if [ "${aHost}" == "" ]; then
 
@@ -30,8 +30,8 @@
     echo "  Copying files from ./${aBuild} to: ${aHost}:/webs/FRApps/${aDirApp}/${aBuild}"
     echo ""
 
-    echo "  $  ssh  ${aHost}  mkdir -p ${aWebDir}/${aDirApp}/${aBuild}"
-    echo "  $  scp -r build/* ${aHost}:${aWebDir}/${aDirApp}/${aBuild}/"
+    echo "  $  ssh  ${aHost}  mkdir -p ${aWebDir}/${aDirApp}/${aBuildDir}"
+    echo "  $  scp -r build/* ${aHost}:${aWebDir}/${aDirApp}/${aBuildDir}/"
     echo ""
                ssh  ${aHost}  mkdir -p ${aWebDir}/${aDirApp}/${aBuild}    >/dev/null 2>&1
                scp -r build/* ${aHost}:${aWebDir}/${aDirApp}/${aBuild}/
