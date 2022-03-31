@@ -27,13 +27,13 @@
     echo ""
     echo "*************************************************************************************************"
     echo ""
-    echo "  Copying files from ./${aBuild} to: ${aHost}:/webs/FRApps/${aDirApp}/${aBuild}"
+    echo "  Copying files from ./${aBuildDir} to: ${aHost}:/webs/FRApps/${aDirApp}/${aBuildDir}"
     echo ""
 
-    echo "  $  ssh  ${aHost}  mkdir -p ${aWebDir}/${aDirApp}/${aBuildDir}"
+    echo "  $  ssh  ${aHost}  mkdir -p ${aWebDir}/${aDirApp}/${aBuildDir}/"
     echo "  $  scp -r build/* ${aHost}:${aWebDir}/${aDirApp}/${aBuildDir}/"
     echo ""
-               ssh  ${aHost}  mkdir -p ${aWebDir}/${aDirApp}/${aBuild}    >/dev/null 2>&1
-               scp -r build/* ${aHost}:${aWebDir}/${aDirApp}/${aBuild}/
+               ssh  ${aHost}  mkdir -p ${aWebDir}/${aDirApp}/${aBuildDir}/   
+               scp -r build/* ${aHost}:${aWebDir}/${aDirApp}/${aBuildDir}/
 
     echo "*************************************************************************************************"
