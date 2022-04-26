@@ -15,14 +15,14 @@
       "type": "chrome",
       "request": "launch",
       "name": "Debug 0c-html-home",
-      "url": "http://localhost:5500/client/0c-html-home/index.html",
+      "url": "http://localhost:5500/client/1c-html-custom-app/index.html",
       "webRoot": "${workspaceFolder}"
        },
     {
       "type": "chrome",
       "request": "launch",
       "name": "Debug expanding-cards",
-      "url": "http://localhost:5500/client/0c-html-home/expanding-cards/index.html",
+      "url": "http://localhost:5500/client/0c-9of50-html-widgets/expanding-cards/index.html",
       "webRoot": "${workspaceFolder}"
        }
   ]
