@@ -27,10 +27,11 @@ body {
   border-radius: 50px;
   color: #fff;
   cursor: pointer;
-  flex: 0.5;
+  flex:   0.5;
   margin: 10px;
   position: relative;
-  -webkit-transition: all 700ms ease-in;
+/*-webkit-transition: all 700ms ease-in; *//* .(20421.04.1 RAM Doesn't seem to work */ 
+          transition: all 700ms ease-in;
 }
 
 .panel h3 {
