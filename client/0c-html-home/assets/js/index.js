@@ -1,8 +1,8 @@
 
 // import                    '../../assets/css/animated-navigation.css'
 
-// import { MenuBar }  from  '../../assets/js/animated-navigation_u2.js'
-   import { NavMenu }  from  '../../assets/js/animated-navigation_u2.js'
+// import { MenuBar }  from  '../../assets/js/animated-navigation_u1.js'
+   import { NavMenu }  from  '../../assets/js/navigation-items_u2.js'
 //          NavMenu.setBar()     // Executed when loaded (if it were defined) 
 //          NavMenu.setItems() 
 

@@ -1,19 +1,5 @@
 //  import  setPanels from './expanding-cards_u6.js';
 
-       var  ToggleButton = document.getElementById( 'toggle' )
-       var  NavMenuBar   = document.getElementById( 'nav' )
-
-// -------------------------------------------------------------------------------------
-
-//function  setBar( ) {
-//          ToggleButton.addEventListener( 'click', ( ) => NavMenuBar.classList.toggle( 'active' ) )
-            ToggleButton.addEventListener( 'click', ToggleButton_onClick )
-//          }
-// ------------------------------------------------------------------------
-
-  function  ToggleButton_onClick( Nav_Event ) {
-            NavMenuBar.classList.toggle( 'active' )
-            }
 // -------------------------------------------------------------------------------------
 
 //function  setItems( ) {
