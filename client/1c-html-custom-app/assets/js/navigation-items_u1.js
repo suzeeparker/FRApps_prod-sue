@@ -24,15 +24,17 @@
        if (aNavItem == "FAQ"     ) { toggleDiv( '.faq-container' ) }
 
 //     if (aNavItem == "Cards"   ) { toggleDiv( '#cards-container' )
-//                                  setPanels( )
+//                                   setPanels( )
        if (aNavItem == "Cards"   ) { toggleDiv( '#cards-container', "flex" )
-                                    }
+                                     }
        if (aNavItem == "Contact" ) { alert( " *** " + aNavItem + " is not defined" ) }
 
             } // eof NavItem_onClick
 //          -------------------------------------------------------
 
   function  toggleDiv( aSelector, aDisplay ) {
+            aDisplay    =  aDisplay    ? aDisplay     : "block"   // The default visible value
+
 //     var  pDiv        =  document.querySelectorAll( '.faq-container' )[0]
        var  pDiv        =  document.querySelectorAll( aSelector )[ 0]
 
@@ -42,8 +44,9 @@
        var  aVisibility =  pDiv.style.display
 //          pDiv.style.display = (aVisibility == "none") ? "block" :"none"
 
-            aDisplay    =  aDisplay ? aDisplay : "block"
-            pDiv.style.display = (aVisibility == "none") ? aDisplay :"none"
+//          aVisibility =  aVisibility ? aVisibility  : "block"
+            aVisibility =  aVisibility ? aVisibility  : "none"   // .(20426.03.11 RTAM Assume it's hidden)
+            pDiv.style.display = (aVisibility == "none") ? aDisplay : "none"
             }
 //          -------------------------------------------------------
 // ------------------------------------------------------------------------

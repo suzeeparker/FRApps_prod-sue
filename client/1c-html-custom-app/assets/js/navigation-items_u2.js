@@ -34,6 +34,8 @@
 //          -------------------------------------------------------
 
   function  toggleDiv( aSelector, aDisplay ) {
+            aDisplay    =  aDisplay    ? aDisplay     : "block"   // The default visible value
+
 //     var  pDiv        =  document.querySelectorAll( '.faq-container' )[0]
        var  pDiv        =  document.querySelectorAll( aSelector )[ 0]
 
@@ -42,8 +44,6 @@
 
        var  aVisibility =  pDiv.style.display
 //          pDiv.style.display = (aVisibility == "none") ? "block" :"none"
-
-            aDisplay    =  aDisplay    ? aDisplay     : "block"   // The default visible value
 
 //          aVisibility =  aVisibility ? aVisibility  : "block"
             aVisibility =  aVisibility ? aVisibility  : "none"   // .(20426.03.11 RTAM Assume it's hidden)
