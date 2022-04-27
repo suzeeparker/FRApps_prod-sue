@@ -1,5 +1,5 @@
 {
-  "name": "2c-react-button",
+  "name": "3c-react-button",
   "version": "0.01.010",
   "author": "8020data",
   "license": "ISC",
@@ -7,7 +7,7 @@
      },
   "scripts": {
     "start": "index.html",
-    "build": "echo   *** There is no build for 2c-react-button",
+    "build": "echo   *** There is no build for 3c-react-button",
     "prod": "index.html"
      }
 }

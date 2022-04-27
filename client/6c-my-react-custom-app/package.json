@@ -1,5 +1,5 @@
 {
-  "name": "5c-my-react-app",
+  "name": "6c-my-react-custom-app",
   "version": "0.01.010",
   "author": "8020data",
   "license": "ISC",
@@ -13,7 +13,7 @@
     "eject": "..\\node_modules\\.bin\\react-scripts  eject",
     "build": "..\\node_modules\\.bin\\react-scripts  build",
     "test": "..\\node_modules\\.bin\\react-scripts  test",
-    "prod": "node serveProd.js 51165",
+    "prod": "node serveProd.js 51166",
     "deploy": "bash deploy.sh"
   },
   "eslintConfig": {

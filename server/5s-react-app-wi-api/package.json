@@ -1,13 +1,13 @@
 {
-  "name": "3s-react-wi-data",
+  "name": "5s-react-wi-data",
   "version": "0.01.010",
   "author": "8020data",
   "license": "ISC",
   "dependencies": {
   },
   "scripts": {
-    "start":   "..\\node_modules\\.bin\\json-server  -p 50114 -r api/routes/routes.json --watch api/models/db.json api/models/db.json",
-    "start-unix": "../node_modules/.bin/json-server  -p 50114 -r api/routes/routes.json --watch api/models/db.json api/models/db.json"
+    "start":   "..\\node_modules\\.bin\\json-server  -p 50115 -r api/routes/routes.json --watch api/models/db.json api/models/db.json",
+    "start-unix": "../node_modules/.bin/json-server  -p 50115 -r api/routes/routes.json --watch api/models/db.json api/models/db.json"
   },
   "browserslist": {
     "production": [
