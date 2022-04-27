@@ -5,37 +5,37 @@
 
   function  setPanels() {
 
-       var  mPanels = document.querySelectorAll( '.panel' )
+       var mCard_Panels = document.querySelectorAll( '.panel' )
 
-            addActiveClasses( mPanels )
+             Card_addEventListeners( mCard_Panels )
 
-//          ------------------------------------------
+//  -----------------------------------------------------
 
-  function  addActiveClasses( mPanels ) {
-            mPanels.forEach( addActiveClass )
+   function  Card_addEventListeners( mCard_Panels ) {
+            mCard_Panels.forEach( Card_addEventListener )
             }
-//          ------------------------------------------
+//  -----------------------------------------------------
 
-  function  addActiveClass( pPanel) {
-            pPanel.addEventListener( 'click', onClick )
+   function  Card_addEventListener( pCard_Panel ) {
+            pCard_Panel.addEventListener( 'click', Card_onClick )
             }
-//          ------------------------------------------
+//  -----------------------------------------------------
 
-  function  onClick( pEvent ) {
-            delActiveClasses( mPanels )
-            pEvent.currentTarget.classList.add( 'active' )
+   function  Card_onClick( pCard_Event ) {
+            removeActiveClasses( mCard_Panels )
+            pCard_Event.currentTarget.classList.add( 'active' )
             }
-//          ------------------------------------------
+//  -----------------------------------------------------
 
-  function  delActiveClasses( mPanels ) {
-            mPanels.forEach( delActiveClass )
+   function  Card_removeActiveClasses( mCard_Panels ) {
+            mCard_Panels.forEach( removeActiveClass )
             }
-//          ------------------------------------------
+//  -----------------------------------------------------
 
-  function  delActiveClass( pPanel ) {
-            pPanel.classList.remove( 'active' )
+   function  Card_removeActiveClass ( pCard_Panel ) {
+            pCard_Panel.classList.remove('active')
             }
-//          ------------------------------------------
+//  ----------------------------------------------------
         } // eof setPanels
 // ------------------------------------------------------------
 

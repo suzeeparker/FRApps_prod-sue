@@ -1,16 +1,16 @@
-       var  ToggleButton = document.getElementById( 'toggle' )
-       var  NavMenuBar   = document.getElementById( 'nav' )
+       var  toggle = document.getElementById( 'toggle' )
+       var  nav    = document.getElementById( 'nav' )
 
 //  --------------------------------------------------------------
 
-//function  setNav() {
-//          ToggleButton.addEventListener( 'click', ( ) => NavMenuBar.classList.toggle( 'active' ) )
-            ToggleButton.addEventListener( 'click', ToggleButton_onClick )
+//          toggle.addEventListener( 'click', ( ) => NavMenuBar.classList.toggle( 'active' ) )
+            toggle.addEventListener( 'click', onClick )
 //          }
 //  --------------------------------------------------------------
 
-//function  ToggleButton_onClick( Nav_Event ) { 
-  function  ToggleButton_onClick(  ) { 
-            NavMenuBar.classList.toggle( 'active' )
+  function  onClick(  ) { 
+            nav.classList.toggle( 'active' )
             }
 //  --------------------------------------------------------------
+
+

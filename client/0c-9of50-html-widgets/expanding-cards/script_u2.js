@@ -1,46 +1,46 @@
 
-       var  mPanels = document.querySelectorAll( '.panel' )
+        var mCard_Panels = document.querySelectorAll( '.panel' )
 
-            addEventListeners( mPanels )
+             Card_addEventListeners( mCard_Panels )
 
 //  -----------------------------------------------------
 
-  function  addEventListeners( mPanels ) {
-            mPanels.forEach( addEventListener )
+   function  Card_addEventListeners( mCard_Panels ) {
+            mCard_Panels.forEach( Card_addEventListener )
             }
 //  -----------------------------------------------------
 
-  function  addEventListener( pPanel ) {
-            pPanel.addEventListener( 'click', Panel_onClick )
+   function  Card_addEventListener( pCard_Panel ) {
+            pCard_Panel.addEventListener( 'click', Card_onClick )
             }
-/*          pPanel.addEventListener( 'click', ( pPanel  ) => Panel_onClick( pPanel ) )
-            pPanel.addEventListener( 'click', () => {
-            removeActiveClasses( mPanels )
-            pPanel.classList.add( 'active' )
+/*          pCard_Panel.addEventListener( 'click', ( pCard_Panel  ) => Card_onClick( pCard_Panel ) )
+            pCard_Panel.addEventListener( 'click', () => {
+            removeActiveClasses( mCard_Panels )
+            pCard_Panel.classList.add( 'active' )
             } ) */
 //  -----------------------------------------------------
 
-  function  Panel_onClick( pEvent ) {
-            removeActiveClasses( mPanels )
-            pEvent.currentTarget.classList.add( 'active' )
+   function  Card_onClick( pCard_Event ) {
+            removeActiveClasses( mCard_Panels )
+            pCard_Event.currentTarget.classList.add( 'active' )
             }
-//function  Panel_onClick( pPanel ) {
-//          removeActiveClasses( mPanels )
-//          pPanel.classList.add( 'active' )
+// function  Card_Panel_onClick( pCard_Panel ) {
+//          removeActiveClasses( mCard_Panels )
+//          pCard_Panel.classList.add( 'active' )
 //          }
 
 //  -----------------------------------------------------
 
-  function  removeActiveClasses( mPanels ) {
-            mPanels.forEach( removeActiveClass )
+   function  Card_removeActiveClasses( mCard_Panels ) {
+            mCard_Panels.forEach( removeActiveClass )
             }
-//          mPanels.map( ( pPanel, i )_=> { return 'Row ' + 1 } )
-//          mPanels.forEach( pPanel => { return 
-//          pPanel.classList.remove( 'active' )
+//          mCard_Panels.map( ( pCard_Panel, i )_=> { return 'Row ' + 1 } )
+//          mCard_Panels.forEach( pCard_Panel => { return 
+//          pCard_Panel.classList.remove( 'active' )
 //          )
 //  -----------------------------------------------------
 
-  function  removeActiveClass ( pPanel ) {
-            pPanel.classList.remove('active')
+   function  Card_removeActiveClass ( pCard_Panel ) {
+            pCard_Panel.classList.remove('active')
             }
 //  -----------------------------------------------------
