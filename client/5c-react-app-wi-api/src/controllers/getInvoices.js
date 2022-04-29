@@ -1,7 +1,7 @@
    import { useEffect, useState } from "react";
 
-//     var  aAPI_URL  = 'http://localhost:50115/api/invoices'
-       var  aAPI_URL  =  process.env.REACT_APP_API_URL; 
+//     var  aAPI_URL  = 'http://localhost:50115/api/invoices'   //#.(20428.03.2)
+       var  aAPI_URL  =  process.env.REACT_APP_API_URL;         // .(20428.03.2 RAM)
 
 //  ------------------------------------------------------------------
 
