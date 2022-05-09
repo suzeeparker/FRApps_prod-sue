@@ -5,6 +5,9 @@
   "license": "ISC",
   "dependencies": {
   },
+
+  "homepage": "/frapps/react-app-wi-api",
+  
   "scripts": {
     "start": "set PORT=50165 && ..\\node_modules\\.bin\\react-scripts  start",
     "start-unix": "PORT=50165 ../node_modules/.bin/react-scripts  start",
