@@ -1,0 +1,209 @@
+        Section  1: Getting Started                             basics-01-understanding-the-course-project-starting-code.zip
+        Section  2: Diving Into the Basics of CSS               css-02-basics-summary.pdf
+        Section  3: Diving Deeper into CSS                      css-background-properties.pdf
+        Section  4: More on Selectors & CSS Features            more-on-selectors-1-start-code.zip
+        Section  5: Practicing the Basics                       practicing-basics-01-adding-style-to-plans-starting-code.zip
+        Section  6: Positioning Elements with CSS               position-01-why-positioning-improves-our-website-starting-code.zip
+        Section  7: Understanding Background Images & ...       background-images-01-understanding-background-size-starting-code-.zip
+        Section  8: Sizes & Units                               sizes-units-01-whats-wrong-with-starting-code.zip
+        Section  9: Working with JavaScript & CSS               css-and-js-01-adding-a-modal-starting-code.zip
+        Section 10: Making our Website Responsive               responsive-01-why-our-project-should-starting-code.zip
+        Section 11: Adding & Styling Forms                      forms-01-adding-the-unstyled-form-starting-code.zip
+        Section 12: Working with Text and Fonts                 fonts-01-understanding-the-browser-settings-starting-code.zip
+        Section 13: Adding Flexbox to our Project               flexbox-01-how-we-could-improve-starting-code.zip
+        Section 14: Using the CSS Grid                          grid-01-using-the-grid-on-our-projectstarting-code.zip
+        Section 15: Transforming Elements with CSS...           transforms-01-rotate-and-translate.zip
+        Section 16: Transitions & Animations in CSS             animations-1-applying-transitions.zip
+        Section 17: Writing Future- Proof CSS Code              future-proof-1-css-variables.zip
+        Section 18: Introducing Sass (Syntactically Awesome...  sass-01-installing-sass-starting-code.zip
+        Section 19: Course Roundup
+
+       33045       ./css-background-properties.pdf
+       15361       ./css-box-model.pdf
+       90197       ./css-combinators.pdf
+       54337       ./css-flexbox-slides.pdf
+      134952       ./css-fonts-slides.pdf
+      385547       ./css-grid.pdf
+      533250       ./css-grid (1).pdf
+       81848       ./css-inheritance.pdf
+       18246       ./css-margin-collapsing.pdf
+       66498       ./css-position-slides.pdf
+       63801       ./css-properties-worth-remembering.pdf
+       48165       ./css-responsive-slides.pdf
+      158109       ./css-selectors.pdf
+       65569       ./css-shorthand-properties.pdf
+       17349       ./css-syntax.pdf
+       37869       ./css-transform-rotate.pdf
+      100429       ./css-units-slides.pdf
+        1451       ./toggle-button.zip
+
+       22594    02 ./css-02-basics-summary.pdf
+        1505    02 ./basics-01-understanding-the-course-project-starting-code.zip
+        1708    02 ./basics-02-understanding-the-style-tag-finished.zip
+        1865    02 ./basics-03-theory-time-selectors-finished.zip
+        1945    02 ./basics-04-understanding-inheritance-finished.zip
+        1945    02 ./basics-05-theory-time-combinators-finished.zip
+        1924    02 ./basics-06-assignment-problem.zip
+        1724    02 ./basics-07-assignment-solution.zip
+        1945    02 ./basics-08-project-finished.zip
+
+       27572    03 ./css-03-deep-dive-summary.pdf
+        1945    03 ./diving-deeper-01-project-introducing-the-box-model-starting-code.zip
+         851    03 ./diving-deeper-02.01-header-html-code.zip
+        2027    03 ./diving-deeper-02-adding-the-header-starting-code.zip
+        2637    03 ./diving-deeper-03-understanding-an-unexpected-behaviour-finished.zip
+        2336    03 ./diving-deeper-04-styling-anchor-tags-finished.zip
+      350933    03 ./diving-deeper-05.01-background-image.zip
+      352860    03 ./diving-deeper-05-adding-a-background-image-finished.zip
+        1435    03 ./diving-deeper-06-assignment-problem.zip
+        1815    03 ./diving-deeper-07-assignment-solution.zip
+      352860    03 ./diving-deeper-08-project-finished.zip
+
+       22104    04 ./css-03b-more-selectors-summary.pdf
+        2514    04 ./more-on-selectors-1-start-code.zip
+        2739    04 ./more-on-selectors-2-multiple-css-classes.zip
+        2556    04 ./more-on-selectors-3-important.zip
+        2548    04 ./more-on-selectors-4-finished.zip
+
+         965    05 ./practicing-basics-01.01-html-code-plans.zip
+      352860    05 ./practicing-basics-01-adding-style-to-plans-starting-code.zip
+      353990    05 ./practicing-basics-02-styling-our-list-finished.zip
+      353399    05 ./practicing-basics-03-understanding-outlines-finished.zip
+         790    05 ./practicing-basics-04-html-code-core-features.zip
+         744    05 ./practicing-basics-05.01-html-code-footer.zip
+      353770    05 ./practicing-basics-05-adding-the-footer-finished.zip
+         978    05 ./practicing-basics-06.01-html-code-challenge.zip
+      358572    05 ./practicing-basics-06-your-challenge-starting-code.zip
+      356433    05 ./practicing-basics-07-styling-our-package-boxes-finished.zip
+      355842    05 ./practicing-basics-08-project-finished.zip
+
+      355842    06 ./position-01-why-positioning-improves-our-website-starting-code.zip
+         705    06 ./position-02-working-with-fixed-starting-code.zip
+      739148    06 ./position-03.01-background-image.zip
+     1094675    06 ./position-03-using-position-to-add-image-finished.zip
+     1094812    06 ./position-04-styling-our-badge-finished.zip
+        1081    06 ./position-05-diving-deeper-into-relative-positioning-starting-code.zip
+         746    06 ./position-06-working-with-overflow-finished.zip
+        1145    06 ./position-07-introducing-sticky-positioning-starting-code.zip
+        1680    06 ./position-08-understanding-stacking-context-starting-code.zip
+     1095143    06 ./position-09-assignment-problem.zip
+
+       23996    07 ./css-07-background-summary.pdf
+     1094809    07 ./background-images-01-understanding-background-size-starting-code-.zip
+     1094906    07 ./background-images-02-using-the-background-shorthand-finished.zip
+       10754    07 ./background-images-03-styling-images-uhost-icon.zip
+        1401    07 ./background-images-04.01-adding-customer-page-html-code.zip
+     1004295    07 ./background-images-04.02-adding-customer-page-images.zip
+     2111881    07 ./background-images-04-adding-customer-page-finished.zip
+         999    07 ./background-images-05.01-working-on-the-image-layout-css-code.zip
+     2112009    07 ./background-images-05-working-on-the-image-layout-finished.zip
+     2110496    07 ./background-images-06-applying-radial-gradients-finished.zip
+        5997    07 ./background-images-07-adding-svgs-code.zip
+
+     2114692    08 ./sizes-units-01-whats-wrong-with-starting-code.zip
+     2114755    08 ./sizes-units-02-the-height-100-issue-finished.zip
+     2114769    08 ./sizes-units-03-working-with-rem-and-em-finished.zip
+        2637    08 ./sizes-units-04.01-finishing-rem-css-code-shared-and-main.zip
+     2114782    08 ./sizes-units-04-finishing-rem-finished.zip
+     2114793    08 ./sizes-units-05-understanding-vh-vw-finished.zip
+     2114798    08 ./sizes-units-06-project-finished.zip
+
+       21001    09 ./css-09-javascript-and-css-summary.pdf
+        1626    09 ./css-and-js-01.01-adding-a-modal-html-and-css-code.zip
+     2114798    09 ./css-and-js-01-adding-a-modal-starting-code.zip
+     2115427    09 ./css-and-js-02-assignment-problem.zip
+     2115486    09 ./css-and-js-03-assignment-solution.zip
+        1431    09 ./css-and-js-04-adding-a-side-navigation-html-css-code.zip
+
+     2116161    10 ./responsive-01-why-our-project-should-starting-code.zip
+     2116201    10 ./responsive-02-understanding-the-viewport-metatag-finished.zip
+     2117900    10 ./responsive-03-things-to-keep-in-mind-finished.zip
+     2117928    10 ./responsive-04-making-the-plans-responsive-finished.zip
+     2117931    10 ./responsive-05-your-challenge-finished.zip
+     2117931    10 ./responsive-06-assignment-problem.zip
+     2123304    10 ./responsive-07-assignment-solution.zip
+     2118120    10 ./responsive-08-improving-the-packages-page-finished.zip
+     2116549    10 ./responsive-09-project-finished.zip
+
+       19782    11 ./css-11-forms-summary.pdf
+        1652    11 ./forms-01.01-adding-the-unstyled-form-html-code.zip
+     2116549    11 ./forms-01-adding-the-unstyled-form-starting-code.zip
+     2119744    11 ./forms-02-page-initialization-finished.zip
+     2120048    11 ./forms-03-styling-the-checkbox-finished.zip
+     2120093    11 ./forms-04-providing-validation-feedback-finished.zip
+
+     2120135    12 ./fonts-01-understanding-the-browser-settings-starting-code.zip
+     2118402    12 ./fonts-02-working-with-google-fonts-finished.zip
+      270237    12 ./fonts-03.01-importing-our-own-fonts-custom-font-ttf.zip
+     2258324    12 ./fonts-03-importing-our-own-fonts-finished.zip
+     2258337    12 ./fonts-04-understanding-font-formats-finished.zip
+     2258351    12 ./fonts-05-understanding-letter-spacing-finished.zip
+     2258337    12 ./fonts-06-applying-text-decoration-finished.zip
+     2258351    12 ./fonts-07-project-finished.zip
+
+     2258351    13 ./flexbox-01-how-we-could-improve-starting-code.zip
+         792    13 ./flexbox-02-creating-a-flex-container-starting-code.zip
+         824    13 ./flexbox-03-understanding-the-importance-main-cross-finished.zip
+         873    13 ./flexbox-04-and-what-about-align-content-finished.zip
+     2258351    13 ./flexbox-05-improving-the-navigation-bar-starting-code.zip
+     2258401    13 ./flexbox-06-your-challenge-finished.zip
+     2258369    13 ./flexbox-07-improving-the-footer-finished.zip
+     2258423    13 ./flexbox-08-assignment-problem.zip
+     2258420    13 ./flexbox-09-assignment-solution.zip
+         873    13 ./flexbox-10-using-the-order-property-starting-code.zip
+     2258434    13 ./flexbox-11-project-finished.zip
+
+       23677    14 ./css-14-grid-summary.pdf
+        2806    14 ./grid-01-using-the-grid-on-our-projectstarting-code.zip
+        2550    14 ./grid-02-positioning-child-elements.zip
+        2453    14 ./grid-03-repeat-minmax.zip
+        2505    14 ./grid-04-added-line-names.zip
+        2217    14 ./grid-05-assignment-1-start.zip
+        2522    14 ./grid-06-assignment-1-solution.zip
+        2576    14 ./grid-07-working-with-gaps.zip
+        2757    14 ./grid-08-adding-named-template-areas.zip
+        2479    14 ./grid-09-assignment-2-start.zip
+        2577    14 ./grid-10-assignment-2-solution.zip
+        2671    14 ./grid-11-auto-area.zip
+     2258434    14 ./grid-12-grid-in-project-first-steps.zip
+     2269320    14 ./grid-13-fit-content.zip
+        3277    14 ./grid-14-grid-alignment.zip
+        2627    14 ./grid-15-responsive.zip
+        2871    14 ./grid-16-prepared-auto-lectures.zip
+        2751    14 ./grid-17-applying-autoflow.zip
+        2749    14 ./grid-18-autofill-autofit.zip
+        2686    14 ./grid-19-dense-grid.zip
+     2269928    14 ./grid-20-project-finished.zip
+
+       20817    15 ./css-15-transform-summary.pdf
+     2271019    15 ./transforms-01-rotate-and-translate.zip
+     2270041    15 ./transforms-02-skew-scale.zip
+     2270029    15 ./transforms-03-shorthands.zip
+        2465    15 ./transforms-4-3d-starting-code.zip
+        2351    15 ./transforms-5-rotate-3d.zip
+        2489    15 ./transforms-6-added-perspective.zip
+        2436    15 ./transforms-7-translatez.zip
+        2454    15 ./transforms-8-finished.zip
+
+       20696    16 ./css-16-animations-summary.pdf
+     2270994    16 ./animations-1-applying-transitions.zip
+     2270633    16 ./animations-2-timing-functions.zip
+     2271296    16 ./animations-3-transition-and-display.zip
+     2271222    16 ./animations-4-assignment-1-solution.zip
+     2271178    16 ./animations-5-animations-keyframes.zip
+     2270983    16 ./animations-6-multiple-keyframes.zip
+     2271268    16 ./animations-7-customers-animations.zip
+     2271448    16 ./animations-8-assignment-2-solution.zip
+     2270197    16 ./animations-9-finished.zip
+
+     1187424    17 ./css-17-future-css.pdf
+     2270961    17 ./future-proof-1-css-variables.zip
+     2273303    17 ./future-proof-2-vendor-prefixes.zip
+     2272579    17 ./future-proof-3-finished.zip
+
+        4102    18 ./sass-01-installing-sass-starting-code.zip
+        4006    18 ./sass-02-understanding-variables-finished.zip
+        4107    18 ./sass-03-assignment-problem.zip
+        4120    18 ./sass-04-assignment-solution.zip
+        4440    18 ./sass-05-adding-better-import-and-partials-finished.zip
+        4441    18 ./sass-06-understanding-inheritance-finished.zip
