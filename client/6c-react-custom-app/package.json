@@ -1,12 +1,12 @@
 {
-  "name": "6c-my-react-custom-app",
+  "name": "6c-react-custom-app",
   "version": "0.01.010",
   "author": "8020data",
   "license": "ISC",
   "dependencies": {
   },
 
-  "homepage": "/5c-my-react-app",
+  "homepage": "/6c-react-custom-app",
 
   "scripts": {
     "start": "..\\node_modules\\.bin\\react-scripts  start",
