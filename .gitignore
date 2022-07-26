@@ -1,4 +1,5 @@
-node_modules
 *_v[0-9]*
+._[0-9]*
 package-lock.json
+node_modules
 build
