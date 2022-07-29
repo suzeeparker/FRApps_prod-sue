@@ -1,4 +1,4 @@
-## FormR's First React Apps
+## formR's First React Apps
 
   ### 0c. CSS-Samples 
       19 folders containing zip files of 176 CSS Sample files from Maximilian's course
