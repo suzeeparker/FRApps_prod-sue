@@ -2,7 +2,7 @@
   "name": "nodejs-express-json-server",
   "description": "Installs JSON-Server module for developing API apps that return JSON data",
   "version": "0.1.5",
-  "author": "8020data",
+  "author": "Bruce Troutman",
   "license": "ISC",
   "dependencies": {
     "json-server": ""

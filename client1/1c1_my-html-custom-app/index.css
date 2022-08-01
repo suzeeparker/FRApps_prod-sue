@@ -1,0 +1,277 @@
+/* Basic Blocks Custom App */
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bookman Old Style');
+
+/*=======================================*/
+/* root REPLACE Point - :root */
+/*-----------------------------------------
+:root selector for variables
+-------------------------------------------*/
+:root {
+    --Header_background-color: red;
+    --Header_hover-color: white;
+    --HeaderLogo-image: "";
+    /*--HeaderLogo-image: *url( 'assets/images/formr-logo-blue.gif' );*/
+    --HeaderLogo_margin: 35px 0 0 0px;
+    --HeaderList-font-size: 1.2rem;
+  
+    --Section1_background-color: blue;
+    --Section1_background-image: url( 'assets/images/monaco-blue-soft.jpg' );
+  
+    --Section2_background-color: lightgray;
+    --Section2Paragraph-font-color: #ff7034;  /* dark orange */
+  
+    --Footer_background-color:green;
+    --Footer_hover-color: white;
+    --FooterList-font-size: .9rem;  
+    
+    --GlobalFontFamily: "Bookman Old Style", "Frank+Ruhl+Libre:wght@700&display=swap";
+} 
+
+
+/*-----------------------------------------
+The <html> tag properites (unchanged)
+------------------------------------------*/
+html {
+    background: #b3b3b3;
+    height: 100%;
+    text-align: center;
+}
+
+
+/*-----------------------------------------
+The body properites
+------------------------------------------*/
+body {
+    background: white;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: var(--GlobalFontFamily);
+}
+
+
+/*-----------------------------------------
+The <h2> tag properties
+-------------------------------------------*/
+h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+
+/*=======================================*/
+/* HR-1 REPLACE Point - .Header */
+/*-----------------------------------------
+The .Header properites
+------------------------------------------*/
+.Header {
+    background: var(--Header_background-color);
+    width: 100%;
+    height: 100px;
+    position: fixed;  /*was relative*/
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/*===========================================*/
+/* START BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/* H-1 INSERT Point - .HeaderNavBars */
+
+/*     INSERT Point - .HeaderNavBars:focus */
+/* END BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+
+/*===========================================*/
+/* START BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/*=======================================*/
+/* H2 INSERT Point - .HeaderLogo */
+/*-----------------------------------------
+The .HeaderLogo properites
+------------------------------------------*/
+.HeaderLogo {
+    padding-left: 54px;
+    font-size: 1.5rem;
+    color:whitesmoke;
+}
+
+/*=======================================*/
+/* INSERT Point - .HeaderLogo a */
+/*-----------------------------------------
+The .HeaderLogo a properites
+------------------------------------------*/
+.HeaderLogo a {
+    text-decoration: none;
+    color: white;
+    background: blue ;
+    padding: 0.5rem .5rem;
+    border-radius: 8px;
+    box-shadow: 4px 4px black;
+}
+
+/*=======================================*/
+/* INSERT Point - .HeaderSpacer */
+/*-----------------------------------------
+The .HeaderSpacer properites
+------------------------------------------*/
+.HeaderSpacer {
+    flex: 1;
+}
+/* END BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+
+/*===========================================*/
+/* START BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/* H-3 INSERT Point - .HeaderNavList */
+/*-----------------------------------------
+The .HeaderNavList (horizontal menu) properites
+------------------------------------------*/
+.HeaderNavList {
+    list-style: none;
+    margin-right: 30px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: var(--HeaderList_font-size);
+}
+
+/* INSERT Point .HeaderNavListItem a */
+/*-----------------------------------------
+The .HeaderNavListItem a properites
+------------------------------------------*/
+.HeaderNavListItem a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 8px 0;
+    padding: 25px;
+}
+
+/* INSERT Point .HeaderNavListItem a:hover
+                .HeaderNavListItem a:active */
+/*-----------------------------------------
+The .HeaderNavListItem a properites
+------------------------------------------*/
+.HeaderNavListItem a:hover,
+.HeaderNavListItem a:active {
+    color: var(--Header_hover-color);
+}
+/* END BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+
+/*=======================================*/
+/* H-4 INSERT Point - .HeaderNavListItemCTA a */
+/*----------------------------------------
+The .HeaderNavListItemCTA a properties
+-----------------------------------------*/
+
+
+/*===========================================*/
+/* START BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/* H-5 INSERT Point - .HeaderNavListItemCTA */
+
+/* INSERT Point - @keyframes wiggle */
+/* END BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+
+/*=======================================*/
+/* S1R-1 REPLACE Point - Section1 */
+/*-----------------------------------------
+The .Section1 properites
+------------------------------------------*/
+.Section1 {
+    background: var(--Section1_background-color);
+    width: 100%;
+    height: 50%;
+    position: relative;
+    top:10%; /*<---ADD to adjust the top position*/
+}
+
+
+/*===========================================*/
+/* START BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/* S1-1 INSERT Point - .Section1ImageText */
+
+/*      INSERT Point - .Section1ImageText::first-letter */
+/* END BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+
+/*=======================================*/
+/* S2R-1 REPLACE Point - Section2 */
+/*-----------------------------------------
+The .Section2 properites
+------------------------------------------*/
+.Section2 {
+    background: var(--Section2_background-color);
+    width: 100%;
+    height: 50%;
+    position: relative;
+    top:10%; /*<---ADD to adjust the top position*/
+}
+
+
+/*=======================================*/
+/* S2-1 INSERT Point - Section2 h2 */
+/*      DELETE Point - Section2 h2 */
+/*-----------------------------------------
+The .Section2 h2 properites
+------------------------------------------*/
+.Section2 h2 {
+    color: black;
+    font-size: 1.5rem;
+    padding: 1.5;
+}
+
+
+/*===========================================*/
+/* START BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/* S2-2 INSERT Point - Section2Paragraph */
+
+/*      INSERT Point - Section2Paragraph::first-letter/line */
+/* END BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+
+/*=======================================*/
+/* FR-1 REPLACE Point - Footer */
+/*-----------------------------------------
+The .Footer properites
+------------------------------------------*/
+.Footer {
+    background: var(--Footer_background-color);
+    width: 100%;
+    height: 10%;
+    position: relative;
+    top:10%; /*<---ADD to adjust the top position*/
+}
+
+
+
+/*===========================================*/
+/* START BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/* F-1 INSERT Point - .FooterNavList */
+
+/*     INSERT Point - .FooterNavListItem a */
+
+/*     INSERT Point - .FooterNavListItem a:hover
+                      .FooterNavListItem a:active */
+/* END BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+
+/*===========================================*/
+/* START BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/* Responsive Code */  
+/* R-1 INSERT Point - @media (responsive min-width)*/                
+
+/*     @media (responsive max-width)*/ 
+/* END BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+
+/* END */

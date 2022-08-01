@@ -2,7 +2,7 @@
   "name": "formr-apps",
   "description": "Installs client modules for developing apps with HTML and React",
   "version": "0.01.010",
-  "author": "8020data",
+  "author": "Bruce Troutman",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.0.0",
