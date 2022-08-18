@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>2c2_u2_clicks</title>
+
+    <link href="favicon.png" rel="shortcut icon"/>
+    <link href="https://fonts.googleapis.com/css?family=Bookman Old Style" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons&display=block" rel="stylesheet" />
+
+    <script  src="https://code.jquery.com/jquery-3.6.0.min.js"  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <style>
+      body {
+          padding     :  20px;
+          height      : 100vh;
+          width       : 100vw;
+          font-family : "Bookman Old Style";
+          font-size   :  24px;
+          font-weight :  bold;
+          color       : black
+          }
+      a:visited {
+          color       : black
+          }
+
+      .DivResponse {
+          display     : inline-block;
+          }
+          
+      .icon {
+          font-family : 'Material Icons';
+          font-size   : 20px;
+          margin      : 0 0.25em;
+          cursor      : pointer;
+          }
+      .DivOverlay {
+          display     : none;
+          position    : relative; 
+          box-shadow: 4px 3px 8px 1px #969696;
+/*   	   -webkit-box-shadow: 4px 3px 8px 1px #969696;  */ 
+          width       : 300px;
+          background-color: grey;
+          color       :bisque;
+          padding     : 8px; 
+          }
+      #Div3 {
+          top         : 10px; 
+          left        : 10px;
+          }          
+
+    </style>
+
+    <script>
+
+//-- HTML Overlay1 -->
+//-- ----------------------------------------------------------------------------- -->
+
+          function onOverlay1(   ) { alert( "HTML-Overlay1" ); }
+
+
+//-- DOM Overlay2 -->
+//-- ----------------------------------------------------------------------------- -->
+
+          document.addEventListener( 'DOMContentLoaded', ( e ) => {
+
+               var pOverlay2 = document.getElementById(  "Overlay2" )
+                   pOverlay2.addEventListener( "click", onOverlay2  )
+
+          function onOverlay2( e ) { alert( e.target.text )
+               var pDiv2  = document.getElementById(  "Div2" )
+                   pDiv2.innerHTML  =   " ... clicked"
+                   e.preventDefault();   // prevent <a href="" from refreshing the page
+                   }
+             } ) // eof onReady     
+
+//-- jQuery Click3 -->
+//-- ----------------------------------------------------------------------------- -->
+
+          $( document ).ready( function() {
+                   $( "#Overlay3" ).click(  onOverlay3 );
+                   } )
+
+          function onOverlay3( e ) { // alert( e.target.text )
+                  $( "#Div3" ).toggle()
+                   return false      // instead of e.preventDefault();
+                   }
+    </script>
+
+<!-- Lit.dev Click5 -->
+<!-- ----------------------------------------------------------------------------- -->
+
+    <script  type="module" src="./components/sample-overlay_u5.js"></script>
+
+  </head>
+
+  <body>
+
+<!-- HTML Overlay1 -->
+<!-- ----------------------------------------------------------------------------- -->
+
+    <a             href="" onclick="onOverlay1()"  >HTML-Overlay1</a><br>
+
+
+<!-- DOM Overlay2 -->
+<!-- ----------------------------------------------------------------------------- -->
+
+    <a id="Overlay2" href=""                      >DOM-Overlay2</a>
+    <div id="Div2" class="DivResponse"></div><br>
+
+
+<!-- jQuery Click3 -->
+<!-- ----------------------------------------------------------------------------- -->
+
+    <a id="Overlay3" href=""                      >jQuery-Overlay3</a>
+    <span class="icon">help_outline</span>
+    <div id="Div3" class="DivOverlay">
+      This is a help message for the jQuery overlay
+    </div><br>
+
+
+<!-- Markdown Overlay4 -->
+<!-- ----------------------------------------------------------------------------- -->
+<!-- <div> Markdown-Overlay4 </div>
+
+     aHTML = fmtMarkdown( `#Heading
+                           - Item One`)
+     $("#div").innerHTML = aHTML
+-->
+
+<!-- Lit.dev Overlay5 -->
+<!-- ----------------------------------------------------------------------------- -->
+
+    <lit-overlay5></lit-overlay5>
+
+
+<!-- React Click6 -->
+<!-- ----------------------------------------------------------------------------- -->
+
+  </body>
+
+</html>

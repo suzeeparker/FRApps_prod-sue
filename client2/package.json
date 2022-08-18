@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "start": ".\\node_modules\\.bin\\web-dev-server --node-resolve --watch --open index.html"
+  },
+  "dependencies": {
+    "@floating-ui/dom": "^1.0.1",
+    "@lit-labs/motion": "^1.0.3",
+    "@web/dev-server": "^0.1.33",
+    "lit": "^2.3.0"
+  }
+}
