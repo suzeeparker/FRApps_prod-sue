@@ -3,6 +3,7 @@
 /*----- Events ------------------------------------------- */
 
       const enterEvents = [ 'click' ];                            // was: [ 'pointerleave', 'focus' ]
+//    const enterEvents = [ 'pointerleave', 'focus' ];
       const leaveEvents = [ 'pointerleave', 'blur', 'keydown' ];  // removed: 'click'
 
 /*----- Class ----- SimpleTooltip -------------------------------------------- */
