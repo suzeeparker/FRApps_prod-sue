@@ -32,14 +32,15 @@
 
   - ### 1c2. My Javascript Custom App
       A refactored JavaScript app using My HTML Custom App
-  
-  - ### 2c2. JavaScript FAQs App
+  - ### 2c2. My Javascript Click Samples
+      A refactored JavaScript app using My HTML Custom App
+  - ### 3c2. JavaScript FAQs App
       A simple JavaScript app to display FAQs using collapsing detail / summary items
   
-  - ### 3c2. JavaScript Cards App 
+  - ### 4c2. JavaScript Cards App 
       A simple JavaScript app to display cards using a collapsing carousel 
 
-  - ### 4c2. JavaScript JSON Data App 
+  - ### 5c2. JavaScript JSON Data App 
       A simple JavaScript app to retreive JSON data requested with an API call.
 
 </details> 
