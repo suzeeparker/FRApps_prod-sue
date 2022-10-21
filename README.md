@@ -16,10 +16,10 @@
 <details>
   <summary>Client1 HTML Apps</summary>
 
-- ### [1c1. My HTML Custom App](client1/1c1_my-html-custom-app/index_final_custom.html)
+  - ### [1c1. My HTML Custom App](client1/1c1_my-html-custom-app/index_final_custom.html)
       A simple responsive app using HTML and .CSS styles
 
-- ### [2c1. Student Website](client1/2c1_student-website/index.html)
+  - ### [2c1. Student Website](client1/2c1_student-website/index.html)
       A website based on My HTML Custom App 
 
 </details> 
