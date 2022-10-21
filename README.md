@@ -3,7 +3,7 @@
 <h2 style="font-size:24px; margin: -18px 0px 15px 12px;">(FRApps_prod-master)</h2>
 
   <details><summary><b style="font-size:24px;">Client1 HTML Apps</b></summary>
-
+  
   - ### [1c1. My HTML Custom App](client1/1c1_my-html-custom-app/index_final_custom.html)
     A simple responsive app using HTML and .CSS styles
 
