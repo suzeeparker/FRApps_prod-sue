@@ -1,4 +1,4 @@
-<body >
+<head>
   <style>
     h1 {                    font-size: 42px; color: #084074; margin-bottom: 5px; } 
     h2 { margin-top: -10px; font-size: 36px; color: #084074; margin-bottom: 5px; margin-left: 20px; } 
@@ -6,8 +6,8 @@
     h3 { margin-top:  10px; margin-block-start: -10px; margin-block-end: -1px; } 
     p  { margin-top: -15px; margin-block-start:   0px; margin-bottom:    20px; } 
   </style> 
-
-  <div style="padding-left: 20px;">
+</head>
+<body style="padding-left: 20px;">
   
 # <u>formR's First Sample Apps</u> 
 ## (FRApps_prod-master)  
@@ -16,10 +16,10 @@
 <details>
   <summary>Client1 HTML Apps</summary>
 
-  - ### 1c1. My HTML Custom App
+  - ### [1c1. My HTML Custom App]client1/1c1_my-html-custom-app/index.html)
       A simple responsive app using HTML and .CSS styles
 
-  - ### 2c1. Student Website
+  - ### [2c1. Student Website](client1/2c1_student-website/index.html)
       A website based on My HTML Custom App 
 
 </details> 
@@ -124,4 +124,4 @@
   - ### 5s. formR
       A React server api to view, add, edit or delete data in the World database    
 </details> 
-
+</body>
