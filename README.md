@@ -124,4 +124,8 @@
   - ### 5s. formR
       A React server api to view, add, edit or delete data in the World database    
 </details> 
+<<<<<<< HEAD
 </div>
+=======
+</body>
+>>>>>>> 23295439b60569f3c50d017acbcab7f3fc0603cd
