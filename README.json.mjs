@@ -5,9 +5,12 @@
 function README_JSON() {
 return [
 , { proj: "formR's First Sample Apps"
-  , name: "FRApps_prod-master", stages: [
+  , url:  'C:/WEBs/8020/VMs/et218t/webs/nodeapps/FRApps_/prod-robin_v21017/'
+  , name: "FRApps_prod-master"
+  , stages: [
 
-  , { stage: "Client1 HTML Apps", apps: [
+  , { stage: "Client1 HTML Apps"
+    , apps: [
 
     , { app: "1c1. My HTML Custom App"
       , txt: "A simple responsive app using HTML and .CSS styles"
@@ -99,6 +102,7 @@ return [
   ] }
 
 , { proj: "formR's React Data Apps"
+  , url:  'C:/WEBs/8020/VMs/et218t/webs/nodeapps/FormR_/prod-master/'
   , name: "FormR_prod-master", stages: [
 
   , { stage: "Client React Admin Apps", apps: [

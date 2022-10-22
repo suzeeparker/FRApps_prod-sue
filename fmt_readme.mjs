@@ -7,10 +7,13 @@
 
       var  mProjs =  README_JSON()
       var  nPrt   =  2
+      var  aCmd   =  [ , 'ReadMe', 'Index', 'Apps', 'Links' ][ 4 ]
 
-           saveReadMe( mProjs, nPrt, 'README.md'  )
-           saveIndex(  mProjs, nPrt, 'index.html' )
-           showApps(   mProjs, 1    )
+
+       if (aCmd == 'ReadMe') { saveReadMe( mProjs, nPrt, 'README.md'  ) }
+       if (aCmd == 'Index' ) { saveIndex(  mProjs, nPrt, 'index.html' ) }
+       if (aCmd == 'Apps'  ) { showApps(   mProjs, 1 ) }
+       if (aCmd == 'Links' ) { showLinks(  mProjs, 1 ) }
 
 // ------  -------------------- =  --------------------------------------------
 
@@ -131,6 +134,77 @@
             }
 //  -----   ------------------- =  ----------------------------------
         }
+// ------  -------------------- =  --------------------------------------------
+
+ function   showLinks( mProjs ) {
+
+      var   aHTML = `
+                <!-- ------- --------------------------------------------------  ------------------ --------------- -->`
+
+         + ` ${ mProjs.map( pProj => `
+                <div class="title"><u><b>${ pProj.proj }</b></u></div>`
+
+            + ` ${ pProj.stages.map( pStage =>
+
+   `         ` + ` ${ pStage.apps.map( pApp =>
+   `                  <li><a href="${ pProj.url + pApp.url }">${ pApp.app }</a></li>`
+                      ).join( '\n' )
+                      } `
+                   ).join( '\n' )
+                   } `
+               ).join( '\n' )
+               } `
+
+            prtOut( '', aHTML, 1 )
+            }
+//  -----   ------------------- =  ----------------------------------
+
+ function   showLinks2( mProjs ) {
+
+      var   aHTML = `
+                <!-- ------- --------------------------------------------------  ------------------ --------------- -->`
+
+         + ` ${ mProjs.map( pProj => `
+                <div class="title"><u><b>${ pProj.proj }</b></u></div>`
+
+            + ` ${ pProj.stages.map( pStage => `
+                  <div class="subtitle">${ pStage.stage }</div>
+ `
+               + ` ${ pStage.apps.map( pApp =>
+ `                    <li><a href="${ pProj.url + pApp.url }">${ pApp.app }</a></li>`
+                      ).join( '\n' )
+                      } `
+                   ).join( '\n' )
+                   } `
+               ).join( '\n' )
+               } `
+
+            prtOut( '', aHTML, 1 )
+            }
+//  -----   ------------------- =  ----------------------------------
+
+ function   showLinks3( mProjs ) {
+
+      var   aHTML = `
+                <!-- ------- --------------------------------------------------  ------------------ --------------- -->`
+
+         + ` ${ mProjs.map( pProj => `
+                <div class="title"><u><b>${ pProj.proj }</b></u></div>`
+
+            + ` ${ pProj.stages.map( pStage =>
+`                  <div class="subtitle">${ pStage.stage }</div>`
+
+               + ` ${ pStage.apps.map( pApp =>
+ `                    <li><a href="${ pProj.url + pApp.url }">${ pApp.app }</a></li>`
+                      ).join( '\n' )
+                      } `
+                   ).join( '\n' )
+                   } `
+               ).join( '\n' )
+               } `
+
+            prtOut( '', aHTML, 1 )
+            }
 // ------  -------------------- =  --------------------------------------------
 
  function   notMT( aRow ) {
