@@ -1,0 +1,20 @@
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/* Responsive Code */  
+/*The @media MAX-width query properties
+***** About 75% of my Mac book 15" screen on chrome
+/*If Device Width is <= to 1200px Then...*/
+
+/*=========================================*/
+@media only screen 
+and (max-width: 1200px) 
+{
+  /*
+  .Section1 {
+    background-color: lightskyblue;
+  }
+  */
+  .Section1Paragraph {
+    font-size: 115%;
+  } 
+} 

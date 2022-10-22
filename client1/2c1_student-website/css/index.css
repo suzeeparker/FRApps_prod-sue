@@ -28,7 +28,8 @@
     
     /*--GlobalFontFamily: "Roboto Slab";*/
     --GlobalFontFamily: "Frank Ruhl Libre";
-    
+    --GlobalMaxWidth: 950px;
+
     --CalloutIconCheck: "\f14a  \A"; /*checkbox*/
     --CalloutIconCheck: "\f0da  \A"; /*Right Arrow*/
     --CalloutIconCheck: "\f0a4  \A"; /*Right Hand Pointer*/
@@ -43,18 +44,22 @@
 } 
 /*------------------------------------------*/
 * {                   /* reset all style */
-    box-sizing          :  border-box;
-    padding             :  0;
-    margin              :  0;
-    font-family         :  var(--GlobalFontFamily);
-    font-size           :  1rem;
-    }
+    box-sizing: border-box;
+    padding: 0;
+    font-family: var(--GlobalFontFamily);
+    font-size: 1rem;
+  }
 
+body {
+  background-color: cornflowerblue;
+  background-color: whitesmoke;
+}
 .container {            /* custom element style */
-    padding             :  0;
-    margin              :  0;
-    width               :  100%;
-    height              :  100vh;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    max-width: var(--GlobalMaxWidth);
+    margin: auto;
     } 
 
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
@@ -65,47 +70,18 @@ The .Header properites
 ------------------------------------------*/
 .Header {
     background: var(--Header_background-color);
-    border-bottom: 1px #000 solid;
+    border-bottom: 0px #000 solid;
     width: 100%;
     height: 10%;
+    top: 0;
     position: fixed;  /*was relative*/
     z-index: 100;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: var(--GlobalMaxWidth);
 }
-/*------------------------------------------*/
-  
-.xxxHeaderNavBars {
-    display: none;
-    height: 24px;
-    width: 24px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0px;
-    box-sizing: border-box;
-    margin-left: 20px;
-    margin-top: 0px;
-  }
-/*------------------------------------------*/
-.xxxHeaderNavBars:focus {
-      outline: none;
-  }
- 
-  /*------------------------------------------*/
-.xxxHeaderLogo {
-    width: 224px;
-    height: 64px;
-    margin-bottom: 0px;
-    background-image: var(--HeaderLogo-image);
-    background-size: 224px 64px;
-    background-repeat: no-repeat;
-    margin: var(--HeaderLogo_margin);
-    font-size: 25px;
-    font-weight: 600;
-  }
-/*------------------------------------------*/
+/*------------------------------------------*/  
 .HeaderSpacer {
       flex: 1;
   }
@@ -185,15 +161,20 @@ The .Section1 properites
 .Section1 {
     background: var(--Section1_background-image);
     background-color: var(--Section1_background-color);
+    /*
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    */
     border-bottom: 1px black solid;
-    width: 100%;
+    max-width: 100%;
+    text-align: left;
     height: 30%;
     position: relative;
-    top: 10%;
+    top: 60px;
     overflow: auto;
+    font-size: 1rem;
+    font-weight: 600;
 }
 /*------------------------------------------*/
 .Section1Title {
@@ -207,12 +188,12 @@ The .Section1 properites
 /*------------------------------------------*/
 .Section1Title::first-letter {
     font-size: 130%;
+    color: blue;
 }
 /*------------------------------------------*/
 .Section1Paragraph {
   margin: 10px 20px 0px 40px;
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 1.1rem;
 }
 /* Section-1 END ^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
 
@@ -228,8 +209,8 @@ The .Section2 properites
     height: 60%;
     position: relative;
     color: var(--Section2-font-color);
-    top:10%; /*<---ADD to adjust the top position*/
-    overflow: auto;
+    top: 60px; /*<---ADD to adjust the top position*/
+    /*overflow: auto;*/
   }
 /*------------------------------------------*/
 .Section2Title {
@@ -297,9 +278,11 @@ The .Footer properites
 ------------------------------------------*/
 .Footer {
     background: var(--Footer_background-color);
-    width: 100%; 
-    /*top: 10%;  /*Removed in place of the bottom property*/
-    border-top: 1px solid darkgray;
+    /*top: 0px;  /*Removed in place of the bottom property*/
+    max-width: var(--GlobalMaxWidth);
+    margin: auto;
+    width: 100%;
+    border-top: 0px solid darkgray;
     bottom: 0;
     position: fixed;
     z-index: 99;
@@ -326,191 +309,11 @@ The .Footer properites
 .FooterNavListItem a:hover,
 .FooterNavListItem a:active {
   color: var(--Footer_hover-color);
+    max-width: var(--GlobalMaxWidth);
+    margin: auto;
 }
 /* Footer END ^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
 
-/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
-/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
-
-/* Responsive Code */  
-/*The @media MIN-width query properties
-***** About 75% of my Mac book 15" screen on chrome
-=========================================*/
-@media only screen and (min-width: 1200px) {
-
-  /*@media (max-width: 1000px) {*/
-    /*
-    .Section1 {
-      background-color: lightskyblue;
-    }
-    */
-    .Section1Paragraph {
-      font-size: 125%;
-    } 
-  }  
-
-/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
-/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
-
-/*-----------------------------------------
-The @media MAX-width query properties
-***** IPAD
-=========================================*/
-@media only screen and (max-width: 860px) {
-
-/*@media (max-width: 760px) {*/
-
-  .Header {
-    height: 80px;
-  } 
-  .HeaderNavList {
-    display: none;
-  }
-  .MenuWrap {
-    display: flex;
-  }
-  .MenuWrap .Menu > div {
-    /*move menu around*/
-      justify-content: left; /*was center*/
-      padding-left: 140px; /*was deleted*/
-      margin-top: -310px; /*was deleted*/
-    /*end of move around*/
-    }
-  .Logo {
-    padding-left: 2.8rem;
-  }
-  .Section1 {
-    /*background-color: purple;*/
-    border: 1px solid blue;
-    height: 30%;    
-    top: 80px;
-  }  
-   .Section1Title {
-    font-size: 1.5rem;
-    padding: 5px 10px 0px 20px;
-    text-align: center;
-  }
-  .Section1Paragraph {
-    font-size: 95%;
-  }
-  .Section2 {
-    height: 70%; 
-  }  
-  .Section2Title {
-    font-size: 1.5rem;
-    text-shadow: 1px 1px 2px #000000;
-    padding: 5px 10px 0px 22px;
-    text-align: center;
-  }
-  .Section2Paragraph ol {
-    font-size: 125%;
-  }
-  .Section2Paragraph ul {
-    font-size: 100%;
-    margin: 5px 0px 10px 10px;
-    columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;  
-  }
-  .Section2Paragraph li {
-    font-size: 80%;
-  }
-  .Section2Paragraph a {
-    font-size: 100%;
-    font-weight: 600;
-    margin: 8px 0;
-    padding: 2px;
-  }
-  .Section2Paragraph ul a:hover,
-  .Section2Paragraph ul a:active {
-    font-size: 110%;
-  } 
-  .Footer {
-    display: none;
-  }
-}
-
-/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
-/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
-
-/*-----------------------------------------
-The @media MIN-width query properties
-IPHONE *****
-=========================================*/
-@media only screen and (max-width: 370px) {
-/*@media (min-width: 400px) {*/
-.Header {
-   height: 75px;
-}
-.HeaderNavList {
-    display: none;
-}
-.MenuWrap {
-    display: flex;
-}
-.MenuWrap .Menu > div {
-/*move menu around*/
-  justify-content: left; /*was center*/
-  padding-left: 90px; /*was deleted*/
-  margin-top: -80px; /*was deleted*/
-/*end of move around*/
-}
-.Logo {
-  padding-left: 2.8rem;
-}
-.Section1 {
-  /*background-color: pink;*/
-  border: 1px solid blue;
-  height: 35%;
-}
-.Section1Title {
-  font-size: 120%;
-  text-align: center;
-}
-.Section1Paragraph {
-  font-size: 75%;
-}
-.Section2 {
-  height: 65%; 
-}
-.Section2Title {
-  font-size: 120%;
-  text-align: center;
-  text-shadow: 1px 1px 1px #000000;
-}
-.Section2Paragraph {
-  font-size: 75%;
-  padding-left: 15px;
-}
-.Section2Paragraph ul {
-  margin: 0px 0px 5px -10px;
-  font-size: 90%;
-  columns: 1;
-  -webkit-columns: 1;
-  -moz-columns: 1;
-  column-rule: none;
-  border-bottom: none;
-}
-.Section2Paragraph li {
-  font-size: 90%;
-  margin: 0 0 0 -45px;
-}
-.Section2Paragraph a {
-  font-size: 90%;
-  font-weight: 600;
-  margin: px 0;
-  padding: 2px;      
-}
-.Section2Paragraph ul a:hover,
-.Section2Paragraph ul a:active {
-  font-size: 110%;
-}
-.Footer {
-   display: none;
-} 
-}
-
-/* END BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
-
+ 
 
 /* END CSS */

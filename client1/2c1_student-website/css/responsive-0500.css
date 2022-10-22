@@ -1,0 +1,119 @@
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*-----------------------------------------
+The @media MAX-width query properties
+***** 500 px
+/*If Device Width is <= to 500px Then...*/
+
+/*=========================================*/
+@media only screen 
+ and (max-width: 500px) 
+{ 
+  .Header {
+    height: 80px;
+  } 
+  .HeaderNavList {
+    display: none;
+  }
+  .MenuWrap {
+    display: flex;
+  }
+  .MenuWrap .Menu > div {
+    /*move menu around*/
+      justify-content: left; /*was center*/
+      padding-left: 90px; /*was deleted*/
+      margin-top: -210px; /*was deleted*/
+    /*end of move around*/
+  }
+  .MenuWrap .Menu > div > div > ul > li > a {
+    font-size: 1rem;
+    font-weight: 600;
+    color: inherit;
+    padding: 0px;
+  }
+  .BtnCTA a {
+    background: blue;
+    padding: 7px 20px 7px 20px;
+    padding-left: 200px;
+    border-radius: 1px;
+  } 
+  .BoxMenu {
+    padding: 0px;
+    /*background-color: pink;*/
+  } 
+  .Logo {
+    padding-left: 2.8rem;
+  }
+  .FormRText1 { /*Roboto*/
+    font-size: 3rem;
+    text-shadow: 2px 2px 2px black;
+}
+
+  .FormRText2 { /*Roboto*/
+    font-size: 3rem;
+    text-shadow: 2px 2px 2px black;
+}  
+  .Section1 {
+    /*background-color: violet;*/
+    border: 0px solid blue;
+    height: 34%;    
+    top: 80px;
+    overflow: hidden;
+  }  
+    .Section1Title {
+    font-size: 1.4rem;
+    padding: 5px 0px 0px 0px;
+    text-align: center;
+  }
+  .Section1Paragraph {
+    font-size: 100%;
+    margin: 5px 5px 0px 10px;
+  }
+  .Section2 {
+    height: 85%; 
+    overflow: hidden;
+  }  
+  .Section2Title {
+    font-size: 1.4rem;
+    text-shadow: 1px 1px 0px #000000;
+    padding: 5px 10px 0px 22px;
+    text-align: center;
+  }
+  .Section2Paragraph .OrderedList {
+    /*Ordered (numbered) list sizes*/
+    font-size: 100%;
+    margin-left: 10px;
+  }
+  .Section2Paragraph ol {
+    margin-left: -20px;
+  }
+  .Section2Paragraph ul {
+    /*bullet sizes*/
+    font-size: 100%;
+    margin: 5px 0px 10px -10px;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;  
+  }
+  .Section2Paragraph li {
+    /*font-size: 75%;*/
+    padding-top: 2px;
+  }
+  .Section2Paragraph a {
+    font-size: 110%;
+    font-weight: 600;
+    margin: 0px 0px;
+    padding: 0px;
+  }
+  .Section2Paragraph ul a:hover,
+  .Section2Paragraph ul a:active {
+    font-size: 110%;
+  } 
+  .Footer {
+    display: none;
+  }
+}
+    
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
