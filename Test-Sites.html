@@ -1,0 +1,236 @@
+<html>
+  <head>
+    <title>Test Links Page</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+            width           = 1200
+            height          = 2100
+    </script>
+    <style>
+        body {
+            font-family     : arial;
+            size            : 10px;
+            background-color: #EEEEEE;
+            }
+        td {
+            vertical-align  : top;
+            }
+        .title {
+            margin-top      : 8px;
+            }
+        a:visited, a:link {
+            color           : black;
+            text-decoration : none;
+            }
+        iframe {
+            display         : none;
+            padding         : 4px;
+            background-color: #A4A6F7;
+            vertical-align  : top;
+            }
+        #url {
+            padding-bottom  :  6px;
+            }
+        input {
+            width           : 38px;
+            }
+        .size1 {
+            padding         :  0px;
+            margin-right    :-10px;
+            }
+        .newTab: {
+           width            : 12px !important;
+            }
+    </style>
+  </head>
+  <body>
+
+    <table>
+      <tr>
+        <td width="300px">
+
+          <ol>
+
+            <li><a href="http://basec.sicomm.net/nfs/u04/help/blank.html">CLEAR</a>
+              &nbsp; &nbsp; Open in new tab: <input id="new-tab" style="margin-left:-15px;" type="checkbox">
+              <span id="size">
+                <input type="radio" class="size" name="size" value="small" >Small
+                <input type="radio" class="size" name="size" value="medium">Medium
+                <input type="radio" class="size" name="size" value="large" >Large
+              </span>
+            </li>
+
+            <!-- ------- --------------------------------------------------  ------------------ --------------- -->
+
+            <div  class="title"><u><b>Remote Sites</b></u></div>
+
+              <li><a href="http://formr.net"                                        >formR.Net</a></li>
+
+            <!-- ------- --------------------------------------------------  ------------------ --------------- -->
+
+            <div class="title"><u><b>formR's First Sample Apps</b></u></div>
+
+              <li><a href="./client1/1c1_my-html-custom-app/index_final_custom.html">1c1. My HTML Custom App</a></li>
+              <li><a href="./client1/2c1_student-website/index.html"                >2c1. Student Website</a></li>
+
+              <li><a href="./client2/1c2_my-javascript-custom-app/index.html"       >1c2. My JavaScript Custom App</a></li>
+              <li><a href="./client2/2c2_javascript-click-samples/index.html"       >2c2. My JavaScript Click Samples</a></li>
+              <li><a href="./client2/3c2_javascript-faqs-app/index.html"            >3c2. JavaScript FAQs App</a></li>
+              <li><a href="./client2/4c2_javascript-cards-app/index.html"           >4c2. JavaScript Cards App</a></li>
+              <li><a href="./client2/5c2_javascript-json-data-app/index.html"       >5c2. JavaScript JSON Data App</a></li>
+
+              <li><a href="./client3/1c3-test-react-empty-app/build/index.html"     >1c3. React Cards and FAQs App</a></li>
+              <li><a href="./client3/2c3_react-faqs-n-cards-app/index.html"         >2c3. React Empty App</a></li>
+              <li><a href="./client3/3c3-react-button/index.html"                   >3c3. React Button</a></li>
+              <li><a href="./client3/4c3-react-app-no-api/build/index.html"         >4c3. React App with No API</a></li>
+              <li><a href="./client3/5c3-react-app-wi-api/build/index.html"         >5c3. React App with API</a></li>
+              <li><a href="./client3/6c3-react-custom-api/build/index..html"        >6c3. My React Custom App</a></li>
+
+              <li><a href="./client4/1c4_simple-lit-component/index.html"           >1c4. Simple Lit Component App</a></li>
+              <li><a href="./client4/2c4_lit-faqs-n-cards-app/index.html"           >2c4. Lit Cards and FAQs App</a></li>
+              <li><a href="./client4/3c4_lit-app-wi-api/index.html"                 >3c4. Lit App with API</a></li>
+
+              <li><a href="./server2/5s2-json-data-api/index.html"                  >5s2. JSON Data API</a></li>
+
+              <li><a href="./server3/5s3-react-app-wi-api/index.html"               >5s3. React Data API]</a></li>
+
+            <div class="title"><u><b>formR's React Data Apps</b></u></div>
+
+              <li><a href="C:/WEBs/8020/VMs/et218t/webs/nodeapps/FormR_/prod-master/client/1c-world/public/index.html"  >1c. World</a></li>
+              <li><a href="C:/WEBs/8020/VMs/et218t/webs/nodeapps/FormR_/prod-master/client/3c-rauth/public/index.html"  >3c. RAuth</a></li>
+              <li><a href="C:/WEBs/8020/VMs/et218t/webs/nodeapps/FormR_/prod-master/client/4c-admin/public/index.html"  >4c. Admin</a></li>
+              <li><a href="C:/WEBs/8020/VMs/et218t/webs/nodeapps/FormR_/prod-master/client/5c-formr/public/index.html"  >5c. formR</a></li>
+
+              <li><a href="C:/WEBs/8020/VMs/et218t/webs/nodeapps/FormR_/prod-master/server/1s-world/index.html"         >1s. World</a></li>
+              <li><a href="C:/WEBs/8020/VMs/et218t/webs/nodeapps/FormR_/prod-master/server/3s-rauth/index.html"         >3s. RAuth</a></li>
+              <li><a href="C:/WEBs/8020/VMs/et218t/webs/nodeapps/FormR_/prod-master/server/4s-admin/index.html"         >4s. Admin</a></li>
+              <li><a href="C:/WEBs/8020/VMs/et218t/webs/nodeapps/FormR_/prod-master/server/5s-formr/index.html"         >5s. formR</a></li>
+
+            <!-- ------- --------------------------------------------------  ------------------ --------------- -->
+
+            <div  class="title"><u><b>Dynamic Sites running on a local port</b></u></div>
+
+              <li><a href="http://localhost:55000/#/FRApps/fr020200_My-Custom-Javascript-App"               >local docs..</a></li>
+              <li><a href="http://127.0.0.1:{port}/client2/1c2a_js-responsive-app/src/index_u1.html"        >local:<input value="5500">/1c2a_js/index_u1</a></li>
+              <li><a href="http://127.0.0.1:{port}/client2/1c2a_js-responsive-app/src/index_u2.html"        >local:<input value="5500">/1c2a_js/index_u2</a></li>
+              <li><a href="http://127.0.0.1:{port}/client1/1c1_my-html-custom-app/index_final_custom.html"  >local:<input value="5500">/1c1_html/index_final_custom.</a></li>
+
+            <!-- ------- --------------------------------------------------  ------------------ --------------- -->
+
+            <div  class="title"><u><b>Sites requiring a login</b></u></div>
+
+              <li><a href="http://basec.sicomm.net/login"                     >basec../buyerlogin</a>
+                <select          id="basec-login">
+                  <option     value="{UID}:{PWD}"                             >username      </option>
+                </select>
+              </li>
+
+              <li><a href="http://basec.sicomm.net/admin"                     >basec../adminlogin</a>
+                <select          id="basec-admin">
+                  <option     value="{UID1}:{PWD1}"                           >username1     </option>
+                  <option     value="{UID2}:{PWD2}"                           >username2     </option>
+                  <option     value="{UID3}:{PWD3}"                           >username3     </option>
+                </select>
+              </li>
+
+          </ol>
+        </td>
+        <td>
+          <div id="URL" ></div>
+          <iframe src=""></iframe>
+        </td>
+      </tr>
+    </table>
+  </body>
+  <script>
+            $( "a"      ).click( Link_onClick )
+//          $( ".size1" ).click( Size_onClick )
+//          $( '#new_tab' ).prop( 'checked', true )
+            console.log( $._data( $( 'a' )[3], "events").click[0].handler )
+            console.log( $( $( 'a' )[3] ).html )
+
+  function  Link_onClick1( e ) {
+        var aStyle = `display: block; width: ${width}px; height: ${height}px;`
+        var aDate  = (new Date).toUTCString(); aDate  = aDate.substr(8,4) + aDate.substr(5,3) + aDate.substr(17,8)
+
+        var pLink  = $( this )
+        var aLink1 =  pLink.attr( 'href' ),    aPort  =  pLink[0].childNodes[1] ? pLink[0].childNodes[1].value : ''
+            aLink1 =  aPort ? aLink1.replace( /{port}/, aPort ) : aLink1
+
+            alert( "Hello: " + aLink1 )
+            }
+
+  function  Link_onClick( ) {
+
+        var aStyle = `display: block; width: ${width}px; height: ${height}px;`
+        var aDate  = (new Date).toUTCString(); aDate  = aDate.substr(8,4) + aDate.substr(5,3) + aDate.substr(17,8)
+
+        var pLink  = $( this )
+//      var aLink1 =  pLink.attr( 'href' ),    aPort  =  pLink[0].childNodes[1].value                                   // .(21022.01.1 RAM fixed bug)
+        var aLink1 =  pLink.attr( 'href' ),    aPort  =  pLink[0].childNodes[1] ? pLink[0].childNodes[1].value : ''     // .(21022.01.1 RAM fixed bug)
+            aLink1 = (aPort) ? aLink1.replace( /{port}/, aPort ) : aLink1
+//          alert(`aLink1: ${aLink1}`)
+
+        var aURL   =  aDate + ": &nbsp; &nbsp;<b>" + aLink1.replace( /admin/, 'login') + "</b>"
+        var aTab   = (aLink1.match( /links|vendorlogin/ ) || $( '#new-tab' ).prop( 'checked' )) ? 'on'  : 'off'
+        var aTab   = (aLink1.match( /blank/             )                                     ) ? 'off' : aTab
+
+            aLink1 = chk_login( aLink1 )
+
+            $( '#URL'   ).html(  aURL + chk_size() )
+            $( ".size1" ).click( Size_onClick )
+
+            $( 'iframe' ).attr( 'style', aStyle )
+        if (aTab != 'on') {
+            $( 'iframe' ).attr( 'src',   aLink1 )
+        } else {
+        var pWin   =  window.open( aLink1, '_blank'); pWin.focus();
+            }
+     return false
+            }
+// -------- ------------------------------------------------------------------
+
+   function chk_login( aLink1 ) {
+        var aSite  =  aLink1.substr(7,5) + '-' + aLink1.substr(24,5)
+        var aLink2 = (aSite == "basec-login") ? '{URL}/loginhandler.html?{ANO}username={UID}&password={PWD}'   : aLink1
+            aLink2 = (aSite == "basec-admin") ? '{URL}/loginhandler.html?{ANO}username={UID}&password={PWD}'   : aLink2
+            aLink2 = (aSite == "basec-vendo") ? '{URL}/pe_system_login_handler.html?logonID={UID}&pswrd={PWD}' : aLink2
+            aLink2 = (aSite == "train-login") ? '{URL}/loginhandler.html?{ANO}username={UID}&password={PWD}'   : aLink2
+            aLink2 = (aSite == "train-admin") ? '{URL}/loginhandler.html?{ANO}username={UID}&password={PWD}'   : aLink2
+            aLink2 = (aSite == "train-vendo") ? '{URL}/pe_system_login_handler.html?logonID={UID}&pswrd={PWD}' : aLink2
+
+        var aLink3 = aLink1.replace( /admin/, 'login')
+        if (aLink1 != aLink2) {
+            mUser  =  $( "#" + aSite ).val().split( ':' )
+            aLink2 =  aLink2.replace( /{UID}/, mUser[0] )
+            aLink2 =  aLink2.replace( /{PWD}/, mUser[1] )
+            aLink2 =  aLink2.replace( /{ANO}/, ""       ) // agency_id=A00000000064&
+            aLink1 =  aLink2.replace( /{URL}/, aLink3   )
+            }
+     return aLink1
+            }
+// -------- ------------------------------------------------------------------
+
+   function chk_size( ) {
+        var aHTML = $( '#size' ).html();
+            $( '#size' ).hide()
+            aHTML = aHTML.replace( /class="size"/g, `class="size1"` )
+     return aHTML
+            }
+// -------- ------------------------------------------------------------------
+
+   function Size_onClick( ) {
+            var pSize   = $( this )
+            var aSize   =  pSize[0].value
+            var nWidth  = (aSize == 'small') ? 375 : ( aSize == 'medium' ? 900 : width  )
+            var nHeight = (aSize == 'small') ? 667 : ( aSize == 'medium' ? 750 : height )
+            var aStyle  = `display: block; width: ${nWidth}px; height: ${nHeight}px;`
+//          alert( `aSize: ${aSize}, aWidth: ${aWidth}, aStyle: ${aStyle}` )
+            $( 'iframe' ).attr( 'style',  aStyle )
+            }
+// -------- ------------------------------------------------------------------
+
+  </script>
+</html>
+
+
