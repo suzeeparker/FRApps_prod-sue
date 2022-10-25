@@ -1,0 +1,47 @@
+
+
+            css-02-basics-summary.pdf
+            css-and-js-01-adding-a-modal-starting-code (1).zip
+            css-background-properties.pdf
+            practicing-basics-01-adding-style-to-plans-starting-code (1).zip
+
+Section  1: Getting Started                             basics-01-understanding-the-course-project-starting-code (1).zip
+Section  2: Diving Into the Basics of CSS
+Section  3: Diving Deeper into CSS
+Section  4: More on Selectors & CSS Features            more-on-selectors-1-start-code (1).zip
+Section  5: Practicing the Basics
+Section  6: Positioning Elements with CSS               position-01-why-positioning-improves-our-website-starting-code (1).zip
+Section  7: Understanding Background Images & ...       background-images-01-understanding-background-size-starting-code- (1).zip
+Section  8: Sizes & Units                               sizes-units-01-whats-wrong-with-starting-code (1).zip
+Section  9: Working with JavaScript & CSS
+Section 10: Making our Website Responsive               responsive-01-why-our-project-should-starting-code (1).zip
+Section 11: Adding & Styling Forms                      forms-01-adding-the-unstyled-form-starting-code (1).zip
+Section 12: Working with Text and Fonts                 fonts-01-understanding-the-browser-settings-starting-code (1).zip
+Section 13: Adding Flexbox to our Project               flexbox-01-how-we-could-improve-starting-code (1).zip
+Section 14: Using the CSS Grid                          grid-01-using-the-grid-on-our-projectstarting-code (1).zip
+Section 15: Transforming Elements with CSS...           transforms-01-rotate-and-translate (1).zip
+Section 16: Transitions & Animations in CSS             animations-1-applying-transitions (1).zip
+Section 17: Writing Future- Proof CSS Code              future-proof-1-css-variables (1).zip
+Section 18: Introducing Sass (Syntactically Awesome...  sass-01-installing-sass-starting-code (1).zip
+Section 19: Course Roundup
+
+
+mkdir "m01-Getting-Started"
+mkdir "m02-Diving-Into-the-Basics-of-CSS"
+mkdir "m03-Diving-Deeper-into-CSS"
+mkdir "m04-More-on-Selectors-&-CSS-Features"
+mkdir "m05-Practicing-the-Basics"
+mkdir "m06-Positioning-Elements-with-CSS"
+mkdir "m07-Understanding-Background-Images"
+mkdir "m08-Sizes-&-Units"
+mkdir "m09-Working-with-JavaScript-&-CSS"
+mkdir "m10-Making-our-Website-Responsive"
+mkdir "m11-Adding-&-Styling-Forms"
+mkdir "m12-Working-with-Text-and-Fonts"
+mkdir "m13-Adding-Flexbox-to-our-Project"
+mkdir "m14-Using-the-CSS-Grid"
+mkdir "m15-Transforming-Elements-with-CSS"
+mkdir "m16-Transitions-&-Animations-in-CSS"
+mkdir "m17-Writing-Future-Proof-CSS-Code"
+mkdir "m18-Introducing-Sass"
+mkdir "m19-Course-Roundup"

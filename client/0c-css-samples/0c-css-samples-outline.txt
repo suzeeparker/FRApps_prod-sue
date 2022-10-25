@@ -1,0 +1,315 @@
+Section 1: Getting Started
+  1. Introduction
+  2. What is CSS? Resources v
+  3. Join our Online Learning Community
+  4. CSS History, Present & Future
+  5. Course Outline
+  6. Choose Your Track
+  7. Course Prerequisites O 1min
+  8. How To Get The Most Out Of This Course
+  9. Recommended Tools
+ 10. Where to Find the Source Code
+ 11. Useful Resources & Links
+
+Section 2: Diving Into the ^ Basics of CSS
+ 12. Module Introduction
+ 13. Understanding the Course Project Setup Resources ^
+ 14. Adding CSS to our Project with Inline Styles
+ 15. Understanding the <style> Tag & Creating a .css File Resources v*
+ 16. Applying Additional Styles & Importing Google Fonts
+ 17. Theory Time - Selectors Resources v
+ 18. Understanding the 'Cascading' Style & Specificity Resources v
+ 19. Understanding Inheritance Resources v
+ 20. Adding Combinators
+ 21. Theory Time - Combinators Resources v
+ 22. Summarizing Properties & Selectors Resources v
+     Quiz 1: Selectors & Combinators Assignment 1: Time to Practice - The Basics
+ 23. Wrap Up Resources v
+ 24. Useful Resources & Link        Resources v
+
+Section 3: Diving Deeper into CSS
+ 25. Module Introduction
+ 26. Introducing the CSS Box Model Resources v
+ 27. Understanding the Box Model Resources v
+ 28. Understanding Margin Collapsing and Removing Defaul.. Resources v
+ 29. Deep Dive on 'Margin Collapsing'
+ 30. Theory Time - Working with Shorthand Properties Resources v
+ 31. Applying Shorthands in Practice
+ 32. Diving Into the Height & Width Properties
+ 33. Understanding Box Sizing
+ 34. Adding the Header to our Project Resources v
+ 35. Understanding the Display Property
+ 36. display: none vs visibility: hidden
+ 37. HTML Refresher: Block-level vs Inline Elements
+ 38. Applying the Display Property & Styling our Navigation Bar
+ 39. Understanding an Unexpected "inline-block" Behaviour Resources v
+ 40. Working with "text-decoration’ & "vertical-align'
+ 41. Styling Anchor Tags Resources v
+ 42. Adding Pseudo Classes
+ 43. Theory Time - Pseudo Classes & Pseudo Elements
+ 44. Grouping Rules
+ 45. Working with "font-weight" & "border"
+ 46. Adding & Styling a CTA-Button
+ 47. Adding a Background Image to our Project Resources v
+ 48. Properties Worth to Remember Resources ~
+     Assignment 2: Time to Practice - Diving Deeper into CSS
+ 49. Wrap Up Resources v
+ 50. Useful Resources & Links Resources ^
+
+Section 4: More on Selectors ^ & CSS Features
+ 51. Module Introduction
+ 52. Using Multiple CSS Classes & Combined Selectors Resources *•
+ 53. Classes or IDs?
+ 54.(Not) using ¡important Resources
+ 55. Selecting the Opposite with :not()
+ 56. CSS & Browser Support
+ 57. Wrap Up Resources ^
+     Quiz 2: Rounding up the Basics
+ 58. Useful Resources & Links Resources ~
+
+Section 5: Practicing the Basics
+ 59. Module Introduction
+ 60. Adding Style to our Plans Resources ^
+ 61. Working on the Recommended Plan
+ 62. Styling the Badge with "border-radius"
+ 63. Styling our List Resources
+ 64. Working on the Title and the Price of our Packages
+ 65. Improving our Action Button
+ 66. Understanding Outlines Resources ^
+ 67. Presenting the Core Features to the User Resources ^
+ 68. Styling the Headline of the Core Features Section
+ 69. Preparing the Content of the Key Feature Area
+ 70. Adding the Footer Resources v
+ 71. What we Achieved so Far
+ 72. Adding the Packages Page
+ 73. Your Challenge Resources
+ 74. Styling the Links
+ 75. Styling our Package Boxes Resources
+ 76. Adding "float" to our Package
+ 77. Fixing the Hover Effect
+ 78. Adding the Final Touches
+ 79. Useful Resources & Links  b Resources v
+
+Section 6: Positioning Elements with CSS
+ 80. Module Introduction
+ 81. Why Positioning will Improve our Website (h Resources v
+ 82. Understanding Positioning - The Theory
+ 85. Using "position" to Add a Background Image (h Resources -
+ 86. Understanding the Z-Index
+ 87. Adding a Badge to our Package
+ 88. Styling & Positioning our Badge with "absolute" and...b Resources v
+ 89. Diving Deeper iexpert?
+ 90. Working with "overflow" and Relative Positioning (v Resources v
+ 91. Introducing "sticky" Positioning (v Resources v
+ 92. Understanding the Context (m Resources - Assignment 3: Time to Practice - Positioning
+ 93. Wrap Up
+ 94. Useful Resources & Links b Resources v
+
+Section 7: Understanding Background Images&...
+ 95. Optional: Advanced Track Introduction b Resources -
+ 96. Module Introduction
+ 98. Working with "background- position" Clip & Attachmen*
+101. Using the "background" Shorthand on our Project (h Resources v
+102. Styling Images
+105. Understanding Linear Gradients
+106. Applying Radial Gradients (h Resources v
+107. Stacking Multiple Backgrounds
+108. Understanding Filters
+109. Adding & Styling SVGs Basics b Resources -
+110. Wrap Up (k Resources v
+111. Useful Resources & Links b Resources v
+112. Module Introduction
+113. What's Wrong With Our Project Units? b Resources -
+114. Where Units Matter
+115. An Overview of Available Sizes & Units
+116. Rules to Remember: Fixed Positioning &"%"
+117. Rules to Remember: Positioning &"%"
+118. Rules to Remember: Relative / Static Positioning & "%"
+120. Defining the Font Size in the Root Element
+121. Using "min-width/height" & "max-width/height"
+122. Working with "rem" & ’’em" b Resources -
+127. Choosing the Right Unit
+128. Using "auto" to Center Elements
+129. Cleaning Up our Code
+130. Wrap Up
+131. Useful Resources & Links b Resources v
+
+Section 9: Working with JavaScript & CSS
+132. Module Introduction
+133. Adding a Modal b Resources -
+134. Selecting & Manipulating Styles with JavaScript
+135. Adding an Event Listener Assignment 4: Time to Practice -
+137. Opening and Closing the Hamburger Menu b Resources -
+138. Manipulating Element Classes
+139. Understanding Property Notations
+140. Cleaning Up our Code
+141. Wrap Up (m Resources -
+142. Useful Resources & Links b Resources v
+
+Section 10: Making our Website Responsive
+143. Module Introduction
+144. Why our Project Should Become Responsive Resources -
+145. Understanding Hardware Pixels vs. Software Pixels
+146. Comparing the Viewport Metatag (HTML) and Media... b Resources -
+148. Designing Websites "Mobile First"
+149. Adding our First Media Queries Points
+152. Creating the Mobile First Design for our Plans
+153. Making the Plans Responsive (h Resources
+154 Creating a Responsive Design...
+155. Working with Logical Operators
+156. Improving the Customers Page
+157
+158
+159. Positioning our Footer Correctly
+160. Wrap Up
+161. Useful Resources & Links (m Resources v
+
+Section 11: Adding & Styling Forms
+162. Module Introduction (h Resources v
+165. Understanding Advanced Attribute Selectors
+166. Working on the General Layout
+167
+168. Styling the Checkbox(h Resources v
+169. Providing Validation Feedback b Resources -
+170. Styling the Signup Button
+171. Fixing a Broken Link
+172. Wrap Up (h Resources -
+173. Useful Resources & Links b Resources v
+
+Section 12: Working with Text and Fonts
+174. Module Introduction
+175. Comparing Generic Families & Font Families
+176
+177
+178. Understanding the "font- family" Syntax
+179
+180. Working with Google Fonts
+181
+182
+183
+184
+185. Adding 'letter-spacing" b Resources -
+186. Changing the Line Height
+187. Applying "text-d Shorthand
+190. Wrap Up
+191. Useful Resources & Links b Resources v
+
+Section 13: Adding Flexbox to our Project
+192. Optional: Expert Track Introduction b Resources -
+193. Module Introduction Resources v
+195. Understanding Flexbox
+196. Creating a Flex Container Resources v
+198. Understanding the Importance of Main Axis & Cross...
+199. Working with conte   (m Resources ^
+200. Quiz 4: Time for another quiz - are you a Flexbox expert already?
+201. Improving the Navigation Bar with Flexbox Ih Resources v
+202. Your Challenge - Working on the Mobile Navigation Barb Resources v
+203
+204. Assignment 6: Time to Practice - Flexbox ?
+205. [OPTIONAL] Assignment Solution (h Resources -
+206. Adding Flexbox to the Customers Page
+207. Using the "order" Property for a Flex Item (h Resources -
+208. Working with "align-self"
+209
+210. Applying "flex-shrink"
+211. Comparing "flex-basis" vs "width" & "height"
+212. Wrap Up
+213. Useful Resources & Links (h Resources -
+
+Section 14: Using the CSS Grid
+214.. Module Introduction
+215. What is the CSS Grid?
+216. Getting Started
+217
+218. Defining Columns & Rows
+219. Positioning Child Elements in a Grid (h Resources -
+220. Using "element-sizing", "repeat" & "minmax" b Resources -
+221. Advanced Element Positioning
+223. Understanding Column & Row Shorthands
+224. Working with Gaps b Resources -
+225. Adding Areas Assignment 8: Tim Diving deeper into
+226. Creating Automata Generated Grid Areas (h Resources -
+227. Using the Grid on our Project
+228
+229
+230. Positioning the Entire Grid Content
+231. Positioning Elei Grids (m Resources v
+233. Applying Autoflow (h Resources v
+234. Comparing the Explicit & Implicit Grid
+239. Next Steps
+240. Wrap Up b Resources v
+241. Useful Resources & Links b Resources v
+
+Section 15: Transforming Elements with CSS...
+242. Module Introduction
+243. Rotating Elements and setting transform-origin
+244. Using Rotate and Translate
+245. Working with "skew" and "scale" b Resources - Resources v
+245. Working with "skew" and •scale’ Resources v
+246. Applying Transformation Shorthands Resources *•
+247. Rotating Elements in 3 Dimensions Resources
+248. Understanding the •perspective" Property Resources v
+249. Moving Elements along the Z-Axis with ’translatez' Resources
+250. Rotating the Container with ’transform style’
+251. Flipping Elements & ’backface-visibility"
+252. Wrap Up Resources Resources
+253. Useful Resources & Links Resources
+
+Section 16: Transitions &   Animations in CSS
+254. Module Introduction
+255. Understanding and Applying Transitions
+256. CSS ’transition’ Property Deep Dive
+257. Working with Timing Functions
+258. Transitions & ’display’
+     Assignment 9: Time to Practice - CSS Transitions (m Resources v
+     Resources v-
+     Resources v
+259. Using CSS Animations
+260. CSS "animation’ Property Deep Dive Cm Resources v
+261. Adding Multiple Keyframes Cm Resources v
+262. Adding Animations to our Customers Page A Resources v
+     Assignment 10: Time to Practice - CSS Animations
+263. Using JavaScript Animation Event Listeners
+264. Wrap Up Resources
+     Resources v
+265. Useful Resources & Links Resources v
+
+Section 17: Writing Future- Proof CSS Code
+266. Module Introduction
+267. CSS Modules & Their Working Groups
+268. Using CSS Variables & Resources v
+269. Understanding & Using Vendor Prefixes
+270. Which Prefixes Should You Use? Cm Resources v
+271. Detecting Browser Support with ©supports Ei Resources v
+272. Polyfills
+273. Eliminating Cross-Browser Inconsistencies
+274. How to Name CSS Classes
+275. Vanilla CSS vs Frameworks
+276. Wrap Up Resources v Resources
+277. Useful Resources & Links
+
+Section 18: Introducing Sass * (Syntactically Awesome...
+278. Module Introduction
+279. What is Sass & Scss? O 4min
+280. Important: Installing Sass
+281. Installing Sass Cm Resources v
+282. Things to be Improved with Sass
+283. Nesting Selectors
+284. Adding Nested Properties
+285. Understanding Variables & Resources v
+286. Storing Lists & Maps in Variables
+287. Built-In Functions
+     Assignment 11: Time to Practice - Sass
+288. Adding Simple Arithmetics
+289. Adding Better Import and Partíais Cm Resources v
+290. Improving Media Queries
+291. Understanding Inheritance Cm Resources v
+292. Adding Mixins
+293. Using the Ampersand Operator
+294. Wrap Up
+295. Useful Resources & Links Cm Resources v
+
+Section 19: Course Roundup ^
+296. Course Roundup
+297. Bonus: More Content!
+
