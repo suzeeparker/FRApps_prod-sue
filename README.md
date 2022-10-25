@@ -7,8 +7,8 @@
   - ### [1c1. My HTML Custom App](client1/1c1_my-html-custom-app/index_final_custom.html)
     A simple responsive app using HTML and .CSS styles
 
-  - ### [2c1. Student Website](client1/2c1_student-website/index.html)
-    A website based on My HTML Custom App
+  - ### [2c1. My HTML Remote App](client1/2c1_my-html-remote-app/index.html)
+    A website based on My HTML Final Custom App
 
   </details>
   <details><summary><b style="font-size:24px;">Client2 JavaScript Apps</b></summary>

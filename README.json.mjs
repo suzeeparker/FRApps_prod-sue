@@ -16,9 +16,9 @@ return [
       , txt: "A simple responsive app using HTML and .CSS styles"
       , url: 'client1/1c1_my-html-custom-app/index_final_custom.html' }
 
-    , { app: "2c1. Student Website"
-      , txt: "A website based on My HTML Custom App"
-      , url: 'client1/2c1_student-website/index.html' }
+    , { app: "2c1. My HTML Rewmote App"
+      , txt: "A website based on My HTML Final Custom App"
+      , url: 'client1/2c1_my-html-custom-app/index.html' }
     ] }
 
   , { stage: "Client2 JavaScript Apps", apps: [
