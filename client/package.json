@@ -10,10 +10,10 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "6.0",
-    "serve": "^13.0.2"
+    "serve": "^6.5.8"
   },
   "devDependencies": {
-    "react-scripts": "4.0.3"
+    "react-scripts": "^5.0.1"
   },
   "scripts": {
     "start": "echo npm ERROR: * You must be in an app folder to start app",
