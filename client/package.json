@@ -1,8 +1,8 @@
 {
-  "name": "formr-apps",
+  "name": "FRpps",
   "description": "Installs client modules for developing apps with HTML and React",
   "version": "0.01.010",
-  "author": "Bruce Troutman",
+  "author": "8020data",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.0.0",
