@@ -5,21 +5,37 @@
       var __filename    =   aURI.replace( /^.+\//, "" )
       var __dirname     =   aURI.replace( `/${__filename}`, "" ).replace( "file:///", "" )
 
-// ------   ------------------- =  --------------------------------------------
    import   README_JSON      from './README_json.mjs';
+       var  mLinks =  []
 
-      var  mProjs =  README_JSON()
+// ------   ------------------- =  --------------------------------------------
 
-      var  nPrt   =  2    // 1) to stdout, 2) to file, 3) both
-      var  nCmd   =  1    // 1) README.md, 2) Index.html, 3) Apps, 4) Links
+       if ( process.argv[1].replace( /.+\\/, "" ) == "README_fmt.mjs" ) {
 
-      var  aCmd   =  [ , 'ReadMe', 'Index', 'Apps', 'Links' ][ nCmd ]
+       var  aCmd   =  process.argv[2] ? process.argv[2] : 'ReadMe'
+       var  nPrt   =  process.argv[3] ? process.argv[3] :  1
 
-       if (aCmd  == 'ReadMe') { savReadMe( mProjs, nPrt, 'README.md'  ) }
-       if (aCmd  == 'Index' ) { savIndex(  mProjs, nPrt, 'index.html' ) }
-       if (aCmd  == 'Apps'  ) { shoApps(   mProjs, 1 ) }
-       if (aCmd  == 'Links' ) { shoLinks(  mProjs, 1 ) }
+            fmtEm( null, aCmd, nPrt )
+            }
 
+  function  fmtEm( mProjs, aCmd, nPrt ) {
+
+       var  mProjs =  mProjs ? mProjs : README_JSON()
+
+       var  nPrt   =  nPrt ? nPrt : 2    // 1) to stdout, 2) to file, 3) both, 4) mLinks
+
+   if ( aCmd.replace( /[0-9]+/, "") == "" ) {
+       var  nCmd   =  aCmd              // 1) README.md, 2) Index.html, 3) Apps, 4) Links
+       var  aCmd   =  [ , 'ReadMe', 'Index', 'Apps', 'Links' ][ nCmd ]
+            }
+
+//          console.log( `aCmd: ${aCmd}, nPrt: ${nPrt}` ); process.exit()
+
+        if (aCmd.match(/ReadMe/i)) { savReadMe( mProjs, nPrt, 'README.md'  ) }
+        if (aCmd.match(/Index/i )) { savIndex(  mProjs, nPrt, 'index.html' ) }
+        if (aCmd.match(/Apps/i  )) { shoApps(   mProjs, 1 ) }
+        if (aCmd.match(/Links/i )) { shoLinks(  mProjs, nPrt ) }
+        }
 // ------  -------------------- =  --------------------------------------------
 
  function  getTopBot_4README( ) {
@@ -178,7 +194,11 @@
         }  //  eof shoApps
 // ------  -------------------- =  --------------------------------------------
 
- function   shoLinks( mProjs ) {
+ function   shoLinks( mProjs, nPrt ) {
+
+            mProjs.forEach( pProj => {
+       if ( pProj.url != "" && pProj.url.match( /\/$/ ) == null ) { pProj.url += '/' }
+            } )
 
       var   aHTML = `
                 <!-- ------- --------------------------------------------------  ------------------ --------------- -->`
@@ -190,7 +210,7 @@
 
    `                  <br>`
             + ` ${ pStage.apps.map( pApp =>
-   `                  <li><a href="${ pProj.url + '/' + pApp.url }">${ pApp.app }</a></li>`
+   `                  <li><a href="${ pProj.url + pApp.url }">${ pApp.app }</a></li>`
                       ).join( '\n' )
                       } `
                    ).join( '\n' )
@@ -198,7 +218,7 @@
                ).join( '\n                </div>\n' ) + '\n                </div>\n'
                } `
 
-            prtOut( '', aHTML, 1 )
+            prtOut( '', aHTML, nPrt )
 
             }  //  eof shoLinks
 // ------  -------------------- =  --------------------------------------------
@@ -272,8 +292,11 @@
             writeFileSync( aFile, aText )
             console.log( `* Saved ${aFile}` )
             }
+        if (nPrt == 4) {
+            mLinks = aText.split( "\n" )
+            }
         }
 // ------  -------------------- =  --------------------------------------------
 
-
+   export { savReadMe, savIndex, shoLinks, README_JSON, mLinks }
 
