@@ -13,7 +13,8 @@
        if ( process.argv[1].replace( /.+\\/, "" ) == "README_fmt.mjs" ) {
 
        var  aCmd   =  process.argv[2] ? process.argv[2] : 'ReadMe'
-       var  nPrt   =  process.argv[3] ? process.argv[3] :  1
+//     var  aCmd   =  process.argv[2] ? process.argv[2] : 'Index'
+       var  nPrt   =  process.argv[3] ? process.argv[3] :  2
 
             fmtEm( null, aCmd, nPrt )
             }

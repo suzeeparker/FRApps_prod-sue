@@ -9,10 +9,13 @@ return [
   , name: "FRApps_prod-master"
   , stages: [
 
-  , { stage: "Client1 HTML Apps"
+  , { stage: "Client1 HTML & CSS App"
     , apps: [
+      , { app: "c10. Background and Purposes"
+      , txt: "An intrduction to the HTML app in this client1 folder."
+      , url: 'client1/c10_background-and-purposes/README.md' }
 
-    , { app: "c11. My HTML Custom App"
+      , { app: "c11. My HTML Custom App"
       , txt: "A simple responsive app using HTML and .CSS styles."
       , url: 'client1/c11_my-html-custom-app/index_final_custom.html' }
 /*
@@ -26,7 +29,7 @@ return [
 
     , { app: "c20. Simple JavaScript onClick Samples"
       , txt: "A few HTML onClick functions using DOM and JQuery."
-      , url: 'client2/c20_javascript-click-samples/index.html' }
+      , url: 'client2/c20_background-and-purposes/README.md' }
 
     , { app: "c21. My JavaScript Custom App"
       , txt: "A refactored 'My HTML Custom App' using JavaScript."
@@ -55,9 +58,9 @@ return [
 
   , { stage: "Client3 Lit Apps", apps: [
 
-    , { app: "c30. Simple Lit Component App"
+    , { app: "c30. Background and Purposes"
       , txt: "A clean Lit component."
-      , url: 'client3/c30_simple-lit-component/index.html' }
+      , url: 'client3/c30_background-and-purposes/README.md' }
 
     , { app: "c31. My Lit Component Custom App"
       , txt: "A refactored 'My JavaScript Custom App' using Lit Components."
@@ -82,9 +85,12 @@ return [
 
   , { stage: "Client4 React Apps", apps: [
 
+    , { app: "c40. Background and Purposes"
+      , txt: "A clean React client app with only one line of HTML and all the React dependancies."
+      , url: 'client4/c40-background-and-purposes/README.md' }
+
     , { app: "c41. My React Custom App"
       , txt: "A refactored 'My Lit Component Custom App' using React."
-      , txt: "A simple React app to display FAQs using collapsing cards and detail / stage items."
       , url: 'client4/c41-my-react-custom-app/build/index.html' }
 
     , { app: "c42. React Menus App"
@@ -92,7 +98,7 @@ return [
       , url: 'client4/c42-react-menus-app/index.html' }
 
     , { app: "c43. React Cards and FAQs App"
-      , txt: "A clean React client app with only one line of HTML and all the React dependancies."
+      , txt: "A simple React app to display responsive header menu."
       , url: 'client4/c43_react-faqs-n-cards-app/index.html' }
 
     , { app: "c44. React App with No API"
@@ -107,34 +113,6 @@ return [
       , txt: "A simple React client app that can be used as a home page template."
       , url: 'client4/c46-react-custom-api/build/index..html' }
     ] }
-
-  , { stage: "Client4 React Apps", apps: [
-
-    , { app: "c41. React Cards and FAQs App"
-      , txt: "A simple React app to display FAQs using collapsing cards and detail / stage items"
-      , url: 'client4/c41-test-react-empty-app/build/index.html' }
-
-    , { app: "c42. React Empty App"
-      , txt: "A clean React client app with only one line of HTML and all the React dependancies."
-      , url: 'client4/c42_react-faqs-n-cards-app/index.html' }
-
-    , { app: "c43. React Button"
-      , txt: "A simple button componant using React deployed from an Internet CDN."
-      , url: 'client4/c43-react-button/index.html' }
-
-    , { app: "c44. React App with No API"
-      , txt: "A simple React app using client-side routes and data."
-      , url: 'client4/c44-react-app-no-api/build/index.html' }
-
-    , { app: "c45. React App with API"
-      , txt: "A simple React app using client-side routes and data served with an API call."
-      , url: 'client4/c45-react-app-wi-api/build/index.html' }
-
-    , { app: "c46. My React Custom App"
-      , txt: "A simple React client app that can be used as a home page template."
-      , url: 'client4/c46-react-custom-api/build/index..html' }
-    ] }
-
 
   , { stage: "Server1 JSON Extract Script", apps: [
 
@@ -169,7 +147,7 @@ return [
   , url:  'C:/Repos/FormR'
   , name: "FormR_prod-master", stages: [
 
-  , { stage: "Client5 React Admin Apps", apps: [
+  , { stage: "Client5 React-Admin Apps", apps: [
 
     , { app: "c51c. World App"
       , txt: "A React client app to view data in the World database."
@@ -188,7 +166,7 @@ return [
       , url: 'client5/c55-formr-app/public/index.html' }
     ] }
 
-  , { stage: "Server5 MySQL APIs", apps: [
+  , { stage: "Server5 React-Admin APIs", apps: [
 
     , { app: "s51s. World APIs"
       , txt: "A React server api to view data in the World database."

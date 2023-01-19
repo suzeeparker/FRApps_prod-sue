@@ -14,7 +14,10 @@
 # <u>formR's First Sample Apps</u>
   <h2 style="font-size:24px; margin: -18px 0px 15px 12px;">(FRApps_prod-master)</h2>
 
-  <details><summary><b style="font-size:24px;">Client1 HTML Apps</b></summary>
+  <details><summary><b style="font-size:24px;">Client1 HTML & CSS App</b></summary>
+
+  - ### [c10. Background and Purposes](client1/c10_background-and-purposes/README.md)
+    An intrduction to the HTML app in this client1 folder.
 
   - ### [c11. My HTML Custom App](client1/c11_my-html-custom-app/index_final_custom.html)
     A simple responsive app using HTML and .CSS styles.
@@ -24,7 +27,7 @@
 </details>
   <details><summary><b style="font-size:24px;">Client2 JavaScript Apps</b></summary>
 
-  - ### [c20. Simple JavaScript onClick Samples](client2/c20_javascript-click-samples/index.html)
+  - ### [c20. Simple JavaScript onClick Samples](client2/c20_background-and-purposes/README.md)
     A few HTML onClick functions using DOM and JQuery.
 
   - ### [c21. My JavaScript Custom App](client2/c21_my-javascript-custom-app/index.html)
@@ -50,7 +53,7 @@
 </details>
   <details><summary><b style="font-size:24px;">Client3 Lit Apps</b></summary>
 
-  - ### [c30. Simple Lit Component App](client3/c30_simple-lit-component/index.html)
+  - ### [c30. Background and Purposes](client3/c30_background-and-purposes/README.md)
     A clean Lit component.
 
   - ### [c31. My Lit Component Custom App](client3/c31_my-lit-component-custom-app/index.html)
@@ -73,14 +76,17 @@
 </details>
   <details><summary><b style="font-size:24px;">Client4 React Apps</b></summary>
 
+  - ### [c40. Background and Purposes](client4/c40-background-and-purposes/README.md)
+    A clean React client app with only one line of HTML and all the React dependancies.
+
   - ### [c41. My React Custom App](client4/c41-my-react-custom-app/build/index.html)
-    A simple React app to display FAQs using collapsing cards and detail / stage items.
+    A refactored 'My Lit Component Custom App' using React.
 
   - ### [c42. React Menus App](client4/c42-react-menus-app/index.html)
     A simple button/menu componant using React deployed from an Internet CDN.
 
   - ### [c43. React Cards and FAQs App](client4/c43_react-faqs-n-cards-app/index.html)
-    A clean React client app with only one line of HTML and all the React dependancies.
+    A simple React app to display responsive header menu.
 
   - ### [c44. React App with No API](client4/c44-react-app-no-api/build/index.html)
     A simple React app using client-side routes and data.
@@ -92,30 +98,7 @@
     A simple React client app that can be used as a home page template.
 
   -
-
-</details>
-  <details><summary><b style="font-size:24px;">Client4 React Apps</b></summary>
-
-  - ### [c41. React Cards and FAQs App](client4/c41-test-react-empty-app/build/index.html)
-    A simple React app to display FAQs using collapsing cards and detail / stage items
-
-  - ### [c42. React Empty App](client4/c42_react-faqs-n-cards-app/index.html)
-    A clean React client app with only one line of HTML and all the React dependancies.
-
-  - ### [c43. React Button](client4/c43-react-button/index.html)
-    A simple button componant using React deployed from an Internet CDN.
-
-  - ### [c44. React App with No API](client4/c44-react-app-no-api/build/index.html)
-    A simple React app using client-side routes and data.
-
-  - ### [c45. React App with API](client4/c45-react-app-wi-api/build/index.html)
-    A simple React app using client-side routes and data served with an API call.
-
-  - ### [c46. My React Custom App](client4/c46-react-custom-api/build/index..html)
-    A simple React client app that can be used as a home page template.
-
-  -
-
+ 
 </details>
   <details><summary><b style="font-size:24px;">Server1 JSON Extract Script</b></summary>
 
@@ -150,10 +133,12 @@
 
 </details>
 
+<br> 
+
 # <u>formR's React Data Apps</u>
   <h2 style="font-size:24px; margin: -18px 0px 15px 12px;">(FormR_prod-master)</h2>
 
-  <details><summary><b style="font-size:24px;">Client5 React Admin Apps</b></summary>
+  <details><summary><b style="font-size:24px;">Client5 React-Admin Apps</b></summary>
 
   - ### [c51c. World App](client5/c51-world-app/public/index.html)
     A React client app to view data in the World database.
@@ -170,7 +155,7 @@
   -
 
 </details>
-  <details><summary><b style="font-size:24px;">Server5 MySQL APIs</b></summary>
+  <details><summary><b style="font-size:24px;">Server5 React-Admin APIs</b></summary>
 
   - ### [s51s. World APIs](server5/s51-world-api/index.html)
     A React server api to view data in the World database.
