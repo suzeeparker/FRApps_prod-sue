@@ -391,60 +391,92 @@ color: var(--Footer_hover-color);
 /*===========================================*/
 /* R-1 START BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
 /* Responsive Code */  
-/* R-1 INSERT Point - @media (max-width)*/ 
+/* R-1 INSERT Point - @media (responsive max-width)*/
 /*-----------------------------------------
-The @media MAX-width (760px) query properties
+The @media MAX-width query properties
+Tablet Portrait
 =========================================*/
-@media (max-width: 760px) {
-
+@media only screen
+and (min-width: 741px)
+and (max-width: 1000px) 
+{
+  .Section1ImageText {
+    font-size: 3rem;
+    padding: 20px 200px 0px 0px;
+  }
+  .Section2Paragraph {
+    font-size: 1rem;
+    padding: 0px 0px 0px 0px;
+    margin: -30px 0px 0px 0px;
+  }
+}  
+/*-----------------------------------------
+The @media MAX-width query properties
+iPhone Landscape
+=========================================*/
+@media only screen
+and (min-width: 441px)
+and (max-width: 740px) 
+{
   .HeaderLogo {
       font-size: 1.2rem;
-      margin-left: 2px;
+      margin-left: 10px;
       background-size: 180px 51px;
   }
-
   .HeaderNavBars {
     display: flex;
   }
-
   .HeaderNavList {
       display: none;
   }
-
   .Section1ImageText {
     font-size: 2.5rem;
-    padding: 80px 200px 20px 0px;
+    text-align: center;
+    vertical-align: center;
+    padding: 0px 150px 20px 0px;
   }
-
   .Section2 h2 {
     font-size: 1.7rem;
   }
-
   .Section2Paragraph {
     font-size: 75%;
+    margin-top: -45px;
+  }
+  .Footer {
+    display: none;
   }
 }
-
 /*-----------------------------------------
 The @media MAX-width (420px) query properties
+iPhone Portrait
 =========================================*/
-@media (max-width: 420px) {
-
+@media only screen
+and (max-width: 440px)  
+{
   .HeaderLogo {
       font-size: .8rem;
       margin-left: 0px;
       margin-top: 0px;
       background-size: 144px 41px;
   }
-
+  .HeaderNavBars {
+    display: flex;
+  }
+  .HeaderNavList {
+      display: none;
+  }
   .Section1ImageText {
-      font-size: 1.2rem;
-      padding: 80px 100px 20px 10px;
-    }
-  
+      font-size: 2rem;
+      padding: 40px 80px 20px 0px;
+      text-align: center;
+      vertical-align: center;
+    } 
   .Section2Paragraph {
       font-size: 60%;
     }
+  h2 {
+      padding: 10;
+  } 
 }
 /* R-1 END BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
 
