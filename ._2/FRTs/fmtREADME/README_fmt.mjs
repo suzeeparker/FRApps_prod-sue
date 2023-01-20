@@ -209,7 +209,9 @@
 
             + ` ${ pProj.stages.map( pStage =>
 
-   `                  <br>`
+// `                  <br>`
+   `                  <div style="height:7px;"></div>` 
+
             + ` ${ pStage.apps.map( pApp =>
    `                  <li><a href="${ pProj.url + pApp.url }">${ pApp.app }</a></li>`
                       ).join( '\n' )

@@ -36,27 +36,27 @@ return [
       , url: 'client2/c21_my-javascript-custom-app/index.html' }
 
     , { app: "c22. JavaScript FAQs App"
-      , txt: "A simple JavaScript app to display FAQs using collapsing detail / stage items."
+      , txt: "A simple JavaScript app tthat displays FAQs using collapsing detail / stage items."
       , url: 'client2/c22_javascript-faqs-app/index.html' }
 
     , { app: "c23. JavaScript Cards App"
-      , txt: "A simple JavaScript app to display cards using a collapsing carousel."
+      , txt: "A simple JavaScript app that displays cards using a collapsing carousel."
       , url: 'client2/c23_javascript-cards-app/index.html' }
 
     , { app: "c24. JavaScript JSON.JS Data App"
-      , txt: "A simple JavaScript app to retreive JSON data from a local JavaScript file."
+      , txt: "A simple JavaScript app that retreives JSON data from a local JavaScript file."
       , url: 'client2/c24_javascript-json-local-data-app/index.html' }
 
     , { app: "c25. JavaScript JSON Server API Data App"
-      , txt: "A simple JavaScript app to retreive JSON data requested from a JSON Server with an API call."
+      , txt: "A simple JavaScript app that retreives JSON data from a JSON Server with API calls."
       , url: 'client2/c25_javascript-json-server-data-app/index.html' }
 
-    , { app: "c26. JavaScript JSON MySQL API Data App"
-      , txt: "A simple JavaScript app to retreive JSON data requested from a MySQL Express Server with an API call."
+    , { app: "c26. JavaScript MySQL Server API Data App"
+      , txt: "A simple JavaScript app that retreives JSON data from a MySQL Express Server with API calls."
       , url: 'client2/c26_javascript-mysql-data-app/index.html' }
     ] }
 
-  , { stage: "Client3 Lit Apps", apps: [
+  , { stage: "Client3 Lit Component Apps", apps: [
 
     , { app: "c30. Background and Purposes"
       , txt: "A clean Lit component."
@@ -67,23 +67,23 @@ return [
       , url: 'client3/c31_my-lit-component-custom-app/index.html' }
 
     , { app: "c32. Lit Component Menus App"
-      , txt: "A simple Lit app requesting data from a server API."
+      , txt: "A simple Lit app that displays responsive header menus."
       , url: 'client3/c32_lit-component-menus-app/index.html' }
 
     , { app: "c33. Lit Component Cards and FAQs App"
-      , txt: "A simple Lit app to display FAQs using collapsing cards and detail / stage items."
+      , txt: "A simple Lit app that displays FAQs using collapsing cards and detail / stage items."
       , url: 'client3/c33_lit-faqs-n-cards-app/index.html' }
 
-    , { app: "c34. Lit Component JSON.JS Data App."
-      , txt: "A simple Lit app to retreive JSON data from a local JavaScript file."
+    , { app: "c34. Lit Component JSON.JS Data App"
+      , txt: "A simple Lit app that retreives JSON data from a local JavaScript file."
       , url: 'client3/c34_lit-app-no-api/index.html' }
 
-    , { app: "c35. Lit Component JSON Server API Data App"
-      , txt: "A simple Lit app requesting retreive JSON data requested from a JSON Server with an API call."
+    , { app: "c35. Lit Component with JSON Server APIs"
+      , txt: "A simple Lit app that retreives JSON data from a JSON Server with API calls."
       , url: 'client3/c35_lit-app-with-api/index.html' }
     ] }
 
-  , { stage: "Client4 React Apps", apps: [
+  , { stage: "Client4 Create React Apps", apps: [
 
     , { app: "c40. Background and Purposes"
       , txt: "A clean React client app with only one line of HTML and all the React dependancies."
@@ -98,19 +98,19 @@ return [
       , url: 'client4/c42-react-menus-app/index.html' }
 
     , { app: "c43. React Cards and FAQs App"
-      , txt: "A simple React app to display responsive header menu."
+      , txt: "A simple React app that displays responsive header menus."
       , url: 'client4/c43_react-faqs-n-cards-app/index.html' }
 
-    , { app: "c44. React App with No API"
+    , { app: "c44. React App with No APIs"
       , txt: "A simple React app using client-side routes and data."
       , url: 'client4/c44-react-app-no-api/build/index.html' }
 
     , { app: "c45. React App with JSON Server APIs"
-      , txt: "A simple React app using client-side routes and data served with an API call."
+      , txt: "A simple React app using client-side routes and data served with API calls."
       , url: 'client4/c45-react-app-with-api/build/index.html' }
 
-    , { app: "c46. My React Custom App"
-      , txt: "A simple React client app that can be used as a home page template."
+    , { app: "c46. React App with MySQL Server APIs"
+      , txt: "A simple React app that retreives JSON data from a MySQL Express Server with API calls."
       , url: 'client4/c46-react-custom-api/build/index..html' }
     ] }
 
