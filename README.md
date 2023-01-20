@@ -34,24 +34,24 @@
     A refactored 'My HTML Custom App' using JavaScript.
 
   - ### [c22. JavaScript FAQs App](client2/c22_javascript-faqs-app/index.html)
-    A simple JavaScript app to display FAQs using collapsing detail / stage items.
+    A simple JavaScript app tthat displays FAQs using collapsing detail / stage items.
 
   - ### [c23. JavaScript Cards App](client2/c23_javascript-cards-app/index.html)
-    A simple JavaScript app to display cards using a collapsing carousel.
+    A simple JavaScript app that displays cards using a collapsing carousel.
 
   - ### [c24. JavaScript JSON.JS Data App](client2/c24_javascript-json-local-data-app/index.html)
-    A simple JavaScript app to retreive JSON data from a local JavaScript file.
+    A simple JavaScript app that retreives JSON data from a local JavaScript file.
 
   - ### [c25. JavaScript JSON Server API Data App](client2/c25_javascript-json-server-data-app/index.html)
-    A simple JavaScript app to retreive JSON data requested from a JSON Server with an API call.
+    A simple JavaScript app that retreives JSON data from a JSON Server with API calls.
 
-  - ### [c26. JavaScript JSON MySQL API Data App](client2/c26_javascript-mysql-data-app/index.html)
-    A simple JavaScript app to retreive JSON data requested from a MySQL Express Server with an API call.
+  - ### [c26. JavaScript MySQL Server API Data App](client2/c26_javascript-mysql-data-app/index.html)
+    A simple JavaScript app that retreives JSON data from a MySQL Express Server with API calls.
 
   -
 
 </details>
-  <details><summary><b style="font-size:24px;">Client3 Lit Apps</b></summary>
+  <details><summary><b style="font-size:24px;">Client3 Lit Component Apps</b></summary>
 
   - ### [c30. Background and Purposes](client3/c30_background-and-purposes/README.md)
     A clean Lit component.
@@ -60,21 +60,21 @@
     A refactored 'My JavaScript Custom App' using Lit Components.
 
   - ### [c32. Lit Component Menus App](client3/c32_lit-component-menus-app/index.html)
-    A simple Lit app requesting data from a server API.
+    A simple Lit app that displays responsive header menus.
 
   - ### [c33. Lit Component Cards and FAQs App](client3/c33_lit-faqs-n-cards-app/index.html)
-    A simple Lit app to display FAQs using collapsing cards and detail / stage items.
+    A simple Lit app that displays FAQs using collapsing cards and detail / stage items.
 
-  - ### [c34. Lit Component JSON.JS Data App.](client3/c34_lit-app-no-api/index.html)
-    A simple Lit app to retreive JSON data from a local JavaScript file.
+  - ### [c34. Lit Component JSON.JS Data App](client3/c34_lit-app-no-api/index.html)
+    A simple Lit app that retreives JSON data from a local JavaScript file.
 
-  - ### [c35. Lit Component JSON Server API Data App](client3/c35_lit-app-with-api/index.html)
-    A simple Lit app requesting retreive JSON data requested from a JSON Server with an API call.
+  - ### [c35. Lit Component with JSON Server APIs](client3/c35_lit-app-with-api/index.html)
+    A simple Lit app that retreives JSON data from a JSON Server with API calls.
 
   -
 
 </details>
-  <details><summary><b style="font-size:24px;">Client4 React Apps</b></summary>
+  <details><summary><b style="font-size:24px;">Client4 Create React Apps</b></summary>
 
   - ### [c40. Background and Purposes](client4/c40-background-and-purposes/README.md)
     A clean React client app with only one line of HTML and all the React dependancies.
@@ -86,19 +86,19 @@
     A simple button/menu componant using React deployed from an Internet CDN.
 
   - ### [c43. React Cards and FAQs App](client4/c43_react-faqs-n-cards-app/index.html)
-    A simple React app to display responsive header menu.
+    A simple React app that displays responsive header menus.
 
-  - ### [c44. React App with No API](client4/c44-react-app-no-api/build/index.html)
+  - ### [c44. React App with No APIs](client4/c44-react-app-no-api/build/index.html)
     A simple React app using client-side routes and data.
 
   - ### [c45. React App with JSON Server APIs](client4/c45-react-app-with-api/build/index.html)
-    A simple React app using client-side routes and data served with an API call.
+    A simple React app using client-side routes and data served with API calls.
 
-  - ### [c46. My React Custom App](client4/c46-react-custom-api/build/index..html)
-    A simple React client app that can be used as a home page template.
+  - ### [c46. React App with MySQL Server APIs](client4/c46-react-custom-api/build/index..html)
+    A simple React app that retreives JSON data from a MySQL Express Server with API calls.
 
   -
- 
+
 </details>
   <details><summary><b style="font-size:24px;">Server1 JSON Extract Script</b></summary>
 
@@ -132,8 +132,6 @@
   -
 
 </details>
-
-<br> 
 
 # <u>formR's React Data Apps</u>
   <h2 style="font-size:24px; margin: -18px 0px 15px 12px;">(FormR_prod-master)</h2>
