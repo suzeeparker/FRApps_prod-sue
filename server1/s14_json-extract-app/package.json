@@ -1,13 +1,13 @@
 {
-  "name": "4s-json-data",
+  "name": "s14_iodd-json-js",
   "version": "0.01.010",
-  "author": "8020data",
+  "author": "Robin Mattern",
   "license": "ISC",
   "dependencies": {
   },
   "scripts": {
-    "start":   "..\\node_modules\\.bin\\json-server  -p 50114 -r routes.json --watch db.json",
-    "start-unix": "../node_modules/.bin/json-server  -p 50114 -r routes.json --watch db.json"
+    "start": "node getJSON.mjs",
+    "getJSON": "node getJSON.mjs"
   },
   "browserslist": {
     "production": [
