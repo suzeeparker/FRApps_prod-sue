@@ -1,11 +1,12 @@
 {
-  "name": "client2_node_modules",
-  "description": "Installs node-fetch to test MySQL Data API that returna JSON data",
+  "name": "iodd-server1_json-js",
+  "description": "Installs JSON-Server module for developing API apps that return JSON data",
   "version": "0.1.5",
   "author": "Robin Mattern",
   "license": "ISC",
   "dependencies": {
-    "node-fetch": "2.0"
+    "shelljs": "^0.8.5",
+    "dotenv": "^16.0.3"
   },
   "scripts": {
     "start": "echo npm ERROR: * You must be in an app folder to start app",
