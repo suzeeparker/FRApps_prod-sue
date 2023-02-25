@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <title>Countries</title>
+
+        <link  href="../favicon.png" rel="shortcut icon" >
+        <link  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+        <script src="../assets/data/db.json.js"  type="application/javascript" ></script>
+<!--    <script src="../assets/data/db1.json.js" type="application/javascript" ></script>  --><!-- Just one Country --> </1-->
+
+<!--    <script src="./countries.js"  type="application/javascript" ></script> -->
+        <script src="./countries.js" type="application/javascript" ></script>
+        <link  href="./countries.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <div class="container">
+
+<!--<table class="TableSpacer"><tr><td id="top">&nbsp;</td></tr><tbody></tbody></table>-->
+
+    <div class="Section2Title">Countries (db.json)</div>
+    <div class="country-list">
+
+      <table class="main-table">
+
+        <tbody id="Countries"></tbody>
+        <script>
+          var pCountries  =  document.getElementById( "Countries" )
+              pJSON.countries      = filterCountries( pJSON.countries, location.href )
+//            pCountries.innerHTML =   fmtCountries2( pJSON.countries, pJSON.cities )
+              pCountries.innerHTML =    fmtCountries( pJSON.countries )
+        </script>
+      </table>
+
+    </div>
+
+  </div> <!--Container ending div-->
+
+</body>
+</html>
