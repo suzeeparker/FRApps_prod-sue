@@ -48,6 +48,8 @@ async function savEm( mDBSQLs ) {
 //     var  aJSON       = "var pJSON =\n" + inspect( pJSON ) + "\n\n  if (process) {  console.log( require('util'                        ).inspect( pJSON, { depth: 99 } ) ) }"
 //     var  aJSON       = "var pJSON =\n" + inspect( pJSON ) + "\n\n  if (process) {  var util  =  require('util');      console.log( util.inspect( pJSON, { depth: 99 } ) ) }"
        var  aJSON       = "var pJSON =\n" + inspect( pJSON ) + "\n\n  "+ ifProcess +" var util  =  require('util');      console.log( util.inspect( pJSON, { depth: 99 , maxArrayLength: 2 } ) ) }"  // .(21218.01.2).(30222.02.3)
+//     var  aJSON       = "var pJSON =\n" + inspect( pJSON ) + "\n\n  "+ ifProcess +" var util  =  await import( 'util');      console.log( util.inspect( pJSON, { depth: 99 , maxArrayLength: 2 } ) ) }"  // .(30225.01.1)
+//     var  aJSON       = "var pJSON =\n" + inspect( pJSON ) 
 
 //          ----------  =  --------------------------------
 
@@ -63,11 +65,15 @@ async function savEm( mDBSQLs ) {
             }
 //          ----------  =  --------------------------------
 
-       var  aFile1      = `${__dirname}/db${aTS}.json.js`
-       var  aFile2      = `${__dirname}/db${aTS}.json`
+//     var  aFile1      = `${__dirname}/db${aTS}.json.mjs` // .(30225.01.2 RAM save db.json.mjs)
+       var  aFile1      = `${__dirname}/db${aTS}.json.js`  // 'var pJSON = { table1: [ {...}, {...} ], table2: ... }'
+       var  aFile2      = `${__dirname}/db${aTS}.json`     // '{ table1: [ {...}, {...} ], table2: ... }'
+      
+            fs.writeFileSync( aFile1,  aJSON )
+            fs.writeFileSync( aFile2,   JSON.stringify( pJSON ) )
 
-            fs.writeFileSync( aFile1, aJSON )
-            fs.writeFileSync( aFile2,  JSON.stringify( pJSON ) )
+       var  pJSON2      =  JSON.parse(  JSON.stringify( pJSON ) ) 
+                                 eval( aJSON.replace( /if \( t.+/, "" ) ); var pJSON1 = pJSON   // no workie in .mjs  
 
             console.log(  "" )
             console.log(  `    Saved: ${aFile1}` )
@@ -203,7 +209,10 @@ async function savEm( mDBSQLs ) {
 
   function  getEnv( aFile ) {                                                               // .(30222.01.3 RAM Beg Write getEnv)
        var  mVars  =  fs.readFileSync( aFile, 'ASCII' ).split(/[\r\n]/), pVars = { }
-            mVars.forEach( aVar => { if (aVar > "") { mVars = aVar.split( /=/ ); pVars[mVars[0].replace( / /g, '' )] = mVars[1] } } )
+            mVars.forEach( aVar => { if (aVar > "") { 
+       var  aKey = aVar.replace(/=.+/, '' ).replace( / /g, '' ); 
+       var  aVal = aVar.replace(/.+?=/, '' )
+            pVars[aKey] = aVal } } )
      return pVars 
             }                                                                               // .(30222.01.3 RAM End)
 //--------  ----------  =  ------------------------------------------------------------------------------
