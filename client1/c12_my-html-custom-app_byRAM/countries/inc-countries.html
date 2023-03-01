@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+     <title>Countries</title>
+
+     <link  href="../favicon.png" rel="shortcut icon" >
+     <link  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" rel="stylesheet">
+     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+<!-- <script src="../assets/data/db1.json.js" type="application/javascript" ></script>  --><!-- Just one Country -->
+<!-- <script src="../assets/data/db.json.js"  type="application/javascript" ></script> --><!-- .(30301.01.1 RAM No workie in include)-->
+     <script src="../c12_my-html-custom-app_byRAM/assets/data/db.json.js"  type="application/javascript" ></script>
+
+<!-- <script src="./countries.js" type="application/javascript" ></script> -->
+     <script src="../c12_my-html-custom-app_byRAM/countries/countries.js"  type="application/javascript" ></script>
+<!-- <link  href="./countries.css" rel="stylesheet"> -->
+     <style>
+        th
+       {
+            position: sticky;
+            top: 0;
+            border-collapse: separate;
+            border-spacing: 0;
+            background: blue;
+            color: white;
+        }
+        .LastRow hr {
+            border-top: blue 1px dashed;
+        }
+    </style> 
+  
+  </head>
+  <body>
+
+    <div class="container">
+
+      <div class="Section2Title"></div>
+      <div class="country-list">
+
+<!--    <table class="TableSpacer"><tr><td id="top">&nbsp;</td></tr><tbody></tbody></table>  -->
+        <table class="main-table" border="0px" cellpadding="2px" cellspacing="4px">
+          <tr>
+            <th><b><u>Code</u></b></th>
+            <th><b><u>Country</u></b></th>
+            <th><b><u>Continent</u></b></th>
+            <th style="text-align: right;"><b><u>Surface Area</u></b> (mi<sup>2</sup>)</th>
+            <th style="text-align: right;"><b><u>Population</u></b></th>
+          </tr>
+          <tbody id="Countries"></tbody>
+          <script>
+            var pCountries           =  document.getElementById( "Countries" )
+                pJSON.countries      =  filterCountries( pJSON.countries, location.href )
+                pCountries.innerHTML =    fmtCountries2( pJSON.countries, pJSON.cities )
+//              pCountries.innerHTML =     fmtCountries( pJSON.countries )
+          </script>
+        </table>
+
+      </div>
+
+    </div> <!--Container ending div-->
+
+  </body>
+</html>
