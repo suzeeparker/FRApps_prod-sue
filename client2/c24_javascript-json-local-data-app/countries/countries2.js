@@ -87,6 +87,8 @@ async function fetchCountries( pDiv ) {
        var  aContinent  =   pCountry.Continent    // 'Asia'
        var  nSurfaceArea=   pCountry.SurfaceArea  //  652090
        var  nPopulation =   pCountry.Population   //  22720000
+//       var  aCities     =   aFill + pCountry.Cities.map( pCity => pCity.CityName ).join( aFill )    // .(30225.03.3 RAM Add Cities)
+       var  aCities     =   pCountry.Cities.map( fmtCity ).join( ' ' )    // .(30225.03.3 RAM Add Cities)
 
        var  aHTML       = `
             <tr Class="${ aClass }" ${aID} style="vertical-align: top; border: 1px solid blue;">
@@ -98,14 +100,14 @@ async function fetchCountries( pDiv ) {
 <!--          <td bgcolor=${abgColor}> ${ aCities.substr(4) }</td>-->
             </tr> 
             <tr>
-              <td align="right" class="plus-expand"><b><a href=countries2.html?ShowCities title="Click To See Cities for Afghanistan">+</a></b></td>
+              <td></td>
               <td><b><u>Cities</u></b></td>
             </tr>
-            <tr class="cities">
+            <tr>
               <td></td>  
               <td colspan=4>${ aCities } </td>
             </tr>
-            <tr class="last-row" id="cities"><td></td><td colspan="4"><hr></td></tr>`
+            <tr class="LastRow"><td></td><td colspan="4"><hr></td></tr>`
             
     return  aHTML 
   function fmtCity ( pCity, j ) {

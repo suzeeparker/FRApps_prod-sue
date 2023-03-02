@@ -95,17 +95,7 @@ async function fetchCountries( pDiv ) {
               <td bgcolor=${abgColor}> ${ aContinent }</td>
               <td bgcolor=${abgColor} style="text-align: right;"> ${ nSurfaceArea }</td>
               <td bgcolor=${abgColor} style="text-align: right;"> ${ nPopulation }</td>
-<!--          <td bgcolor=${abgColor}> ${ aCities.substr(4) }</td>-->
-            </tr> 
-            <tr>
-              <td align="right" class="plus-expand"><b><a href=countries2.html?ShowCities title="Click To See Cities for Afghanistan">+</a></b></td>
-              <td><b><u>Cities</u></b></td>
-            </tr>
-            <tr class="cities">
-              <td></td>  
-              <td colspan=4>${ aCities } </td>
-            </tr>
-            <tr class="last-row" id="cities"><td></td><td colspan="4"><hr></td></tr>`
+            <tr class="LastRow"><td></td><td colspan="4"><hr></td></tr>`
             
     return  aHTML 
   function fmtCity ( pCity, j ) {
