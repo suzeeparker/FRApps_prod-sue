@@ -99,12 +99,13 @@
             </table>
 <!--          <hr    class="lastRow">  -->
 
-<!--        <script  type="application/javascript" src="./assets/data/db.json.js" ></script> -->
+<!--        <script  type="application/javascript"    src="./assets/data/db.json.js" ></script> -->
             <script  type="module">
 
-                var  pResponse   =  await fetch(       './assets/data/db.json' )
+                var  nRows       =  9999
+                var  pResponse   =  await          fetch( './assets/data/db.json'    )
                 var  pJSON       =  await pResponse.json( ) 
-                var  mCountries  =  pJSON.countries.filter( (pCountry, i) => { return i < 12 } )
+                var  mCountries  =  pJSON.countries.filter( (pCountry, i) => { return i < nRows } )
                 var  mHTMLrows   =  mCountries.map( fmtCountry )
 
                 var  pCountries  =  document.getElementById( "Countries" )
