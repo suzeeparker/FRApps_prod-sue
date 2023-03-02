@@ -99,7 +99,7 @@ async function fetchCountries( pDiv ) {
               <td bgcolor=${abgColor} style="text-align: right;"> ${ nPopulation }</td>
 <!--          <td bgcolor=${abgColor}> ${ aCities.substr(4) }</td>-->
             </tr> 
-            <tr>
+            <tr class="cities">
               <td></td>
               <td><b><u>Cities</u></b></td>
             </tr>

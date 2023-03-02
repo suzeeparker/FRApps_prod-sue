@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
         <title>HTML Custom Apps</title>
         <link rel="shortcut icon" href="favicon.png">
         <link rel="stylesheet"    href="https://fonts.googleapis.com/css?family=EB Garamond" >
@@ -57,21 +58,19 @@
 
     <!-- REPLACE Point - Section1 -->
         <div class="Section1">
-            <h2 class="Section1ImageText">My Image & Text</h2>
+            <h2 class="Section1ImageText">world.countries_view</h2>
         </div>
     <!-- END REPLACE Point - Section1 -->
 
     <!-- REPLACE Point - Section2 -->        
         <div class="Section2">
-            <h2></h2>
-            <p class="Section2Paragraph">
-                
-                The quick brown fox jumped over the lazy dog.<br>
-                The quick brown fox jumped over the lazy dog.<br>
-                The quick brown fox jumped over the lazy dog.<br>
-                The quick brown fox jumped over the lazy dog.
-            </p>  
-        </div>
+        <!-- COUNTRIES INCLUDE DATA-->
+            <!--include using jQuery-->
+            <div id="inc-countries"></div>
+            <script> 
+                $("#inc-countries").load("./countries/inc-countries.html");
+            </script> 
+        <!-- END COUNTRIES INCLUDE -->               </div>
     <!-- END REPLACE Point - Section2 -->       
 
     <!-- REPLACE Point - Footer -->
