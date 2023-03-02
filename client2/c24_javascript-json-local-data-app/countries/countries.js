@@ -100,14 +100,14 @@ async function fetchCountries( pDiv ) {
 <!--          <td bgcolor=${abgColor}> ${ aCities.substr(4) }</td>-->
             </tr> 
             <tr>
-              <td></td>
+              <td align="right" class="plus-expand"><b><a href=countries2.html?ShowCities title="Click To See Cities for Afghanistan">+</a></b></td>
               <td><b><u>Cities</u></b></td>
             </tr>
-            <tr>
+            <tr class="cities">
               <td></td>  
               <td colspan=4>${ aCities } </td>
             </tr>
-            <tr class="LastRow"><td></td><td colspan="4"><hr></td></tr>`
+            <tr class="last-row" id="cities"><td></td><td colspan="4"><hr></td></tr>`
             
     return  aHTML 
   function fmtCity ( pCity, j ) {

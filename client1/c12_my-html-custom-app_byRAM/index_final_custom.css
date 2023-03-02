@@ -258,59 +258,44 @@ The .Section1ImageText::first-letter properties
 The .Section2 properites
 -------------------------------------------------*/
 .Section2 {
-  background: var(--Section2_background-color);
+  background-color: #DCDCDC;
+  font-family: var(--GlobalFontFamily);
+  height: 46%;    
   width: 100%;
-  height: 46%;
-  position: relative;
-  color: black;
-  font-family: var(--GlobalFontFamily);
-  font-size: 1.2rem;
-  font-weight: 600;
-  top: 80px; /*<---ADD to adjust the top position*/
+  max-width: 1000px;
+  top: 360px;
+  position: fixed;
+  overflow-y: scroll;
 }
-/* END S2R-1 .Section2 ===========================*/
-
-
-/*===============================================*/
-/* S2-1 INSERT Point - Section2 h2 */
-/*      DELETE Point - Section2 h2 */
-/*-----------------------------------------------
-The .Section2 h2 properites
--------------------------------------------------*/
-.Section2 h2 {
-    padding: 1.5;
-    color: black;
+th {
+  position: sticky;
+  top: 0;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: var(--Header_background-color);
+  background: #183582; /*Dark Sky Blue*/
+  color: white;
 }
-/* END S2-1 .Section2 h2=========================*/
-
-
-/*===========================================*/
-/* S2-2 START BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
-/* S2-2 INSERT Point - Section2Paragraph */
-/*-----------------------------------------
-The .Section2Paragraph properites
-------------------------------------------*/
-.Section2Paragraph {
-  font-family: var(--GlobalFontFamily);
-  margin-top: 0px;
-  font-size: 1.3rem;
-  color: var(--Section2Paragraph-font-color); /* dark orange*/
-  font-weight: bolder;
-  padding-top: 1rem;
+.last-row hr {
+  border-top: blue 1px dashed;
+}
+.main-table {
+  width: 100%;
+}
+.main-table tr th {
+  font-size: 14px;
+  padding-left: 3px;
+}
+.CountryCode-td, 
+.Country-td, 
+.Continent-td, 
+.Area-td, 
+.Population-td {
+  font-size: 14px;
+  text-align: left;
+  padding-left: 3px;
 }
 
-/*=======================================*/
-/* INSERT Point - Section2Paragraph::firstLetter/line */
-/*-----------------------------------------
-The .Section2Paragraph::firstLetter/line properites
-------------------------------------------*/
-.Section2Paragraph::first-line {
-font-size: 125%;
-}
-
-.Section2Paragraph::first-letter {
-font-size: 150%;
-}
 /* S2-2 END BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
 
 
@@ -562,6 +547,14 @@ color: var(--Footer_hover-color);
 /* HAMBURGER END BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
+
+/*===============================================*/
+/* DAT DATA START BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/* Data Code */
+
+
+/* DATA END BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 
 /*===========================================*/
