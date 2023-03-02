@@ -90,13 +90,11 @@ async function fetchCountries( pDiv ) {
 
        var  aHTML       = `
             <tr Class="${ aClass }" ${aID} style="vertical-align: top; border: 1px solid blue;">
-              <td bgcolor=${abgColor}> ${ aCode }</td>
-              <td bgcolor=${abgColor}> ${ aName }</td>
-              <td bgcolor=${abgColor}> ${ aContinent }</td>
-              <td bgcolor=${abgColor} style="text-align: right;"> ${ nSurfaceArea }</td>
-              <td bgcolor=${abgColor} style="text-align: right;"> ${ nPopulation }</td>
-            <tr class="LastRow"><td></td><td colspan="4"><hr></td></tr>`
-            
+              <td class="CountryCode-td" bgcolor=${abgColor}> ${ aCode }</td>
+              <td class="Country-td" bgcolor=${abgColor}> ${ aName }</td>
+              <td class="Continent-td" bgcolor=${abgColor}> ${ aContinent }</td>
+              <td class="Area-td" bgcolor=${abgColor} style="text-align: right;"> ${ nSurfaceArea }</td>
+              <td class="Population-td" bgcolor=${abgColor} style="text-align: right;"> ${ nPopulation }</td>`            
     return  aHTML 
   function fmtCity ( pCity, j ) {
 //       return `<span> ${j+1}:${ pCity.CityName}, </span>`

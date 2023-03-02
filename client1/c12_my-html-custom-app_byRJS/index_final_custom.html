@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
         <title>HTML Custom Apps</title>
         <link rel="shortcut icon" href="favicon.png">
         <link rel="stylesheet"    href="https://fonts.googleapis.com/css?family=EB Garamond" >
@@ -57,76 +58,19 @@
 
     <!-- REPLACE Point - Section1 -->
         <div class="Section1">
-            <h2 class="Section1ImageText">My Image & Text</h2>
+            <h2 class="Section1ImageText">world.countries_view</h2>
         </div>
     <!-- END REPLACE Point - Section1 -->
 
     <!-- REPLACE Point - Section2 -->        
         <div class="Section2">
-
-          <style> 
-                 th  { position: sticky;
-                       top: 0;
-                       border-collapse: separate;
-                       border-spacing: 0;
-                       background: rgb(25,50,125);
-                       color: white;
-                       }   
-            .eachRow { vertical-align: top; border: 1px solid blue; }
-            .evenRow { background: rgb(100,150,250); }   
-            .oddRow  { background: rgb(173,166,174); }   
-            .numRight{ text-align: right               }  
-/*          .lastRow { border-bottom: blue 2px dashed; margin-top: 10px; } */
-            .lastRow { background: rgb(25,50,125);  height: 20px; }
-          </style> 
-
-          <div class="country-list">
-
-<!--        <table   class="TableSpacer"><tr><td id="top">&nbsp;</td></tr><tbody></tbody></table>  -->
-            <table   class="main-table" border="0px" cellpadding="2px" cellspacing="4px"">
-              <tr> 
-                <th                  ><b><u>Code</u></b></th>
-                <th                  ><b><u>Country</u></b></th>
-                <th                  ><b><u>Continent</u></b></th>
-                <th  class="numRight"><b><u>Surface Area</u></b> (mi<sup>2</sup>)</th>
-                <th  class="numRight"><b><u>Population</u></b></th>
-              </tr>
-              <tbody id="Countries"></tbody>
-              <tr>
-                <td  class="lastRow" colspan="5">&nbsp;</td>
-              </tr>
-              <tr><td style="height:50px;">&nbsp;</td></tr>
-            </table>
-<!--          <hr    class="lastRow">  -->
-
-<!--        <script  type="application/javascript"    src="./assets/data/db.json.js" ></script> -->
-            <script  type="module">
-
-                var  nRows       =  9999
-                var  pResponse   =  await          fetch( './assets/data/db.json'    )
-                var  pJSON       =  await pResponse.json( ) 
-                var  mCountries  =  pJSON.countries.filter( (pCountry, i) => { return i < nRows } )
-                var  mHTMLrows   =  mCountries.map( fmtCountry )
-
-                var  pCountries  =  document.getElementById( "Countries" )
-                     pCountries.innerHTML =  mHTMLrows.join( "\n" ) 
-        
-           function  fmtCountry( pCountry, i ) {           
-                var  aColor      =  i % 2 == 1 ? 'evenRow'  : 'oddRow'
-                var  aID         = `id="R${ `${ i + 1 }`.padStart( 3, "0" )}"`
-                var  aHTMLrow    = `
-              <tr ${aID} Class="${`eachRow ${aColor}`}">
-                <td class="${aColor}"         > ${ pCountry.Code }</td>
-                <td class="${aColor}"         > ${ pCountry.Name }</td>
-                <td class="${aColor}"         > ${ pCountry.Continent }</td>
-                <td class="${aColor} numRight"> ${ pCountry.SurfaceArea }</td>
-                <td class="${aColor} numRight"> ${ pCountry.Population }</td>
-              </tr> `
-            return  aHTMLrow        
-                    }
-            </script>
-            
-        </div>
+        <!-- COUNTRIES INCLUDE DATA-->
+            <!--include using jQuery-->
+            <div id="inc-countries"></div>
+            <script> 
+                $("#inc-countries").load("./countries/inc-countries.html");
+            </script> 
+        <!-- END COUNTRIES INCLUDE -->               </div>
     <!-- END REPLACE Point - Section2 -->       
 
     <!-- REPLACE Point - Footer -->
