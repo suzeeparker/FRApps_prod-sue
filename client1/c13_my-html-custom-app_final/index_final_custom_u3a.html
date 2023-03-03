@@ -18,19 +18,27 @@
               mCountries  =  pJSON.countries 
       </script> 
 -->
-      <script>                          // Can't be a module since it is executed last 
+      <script>
 
-  async function getCountries( ) {      // Must define async function to use with await below  
+//        var mCountries  =        getCountries( './assets/data/db.json' )
+       window.mCountries  =        getCountries( './assets/data/db.json' )  // Step 1: mCountries is a promise 
+              console.log( mCountries ) // Step 2: mCountries is a promise 
 
-          var pResponse  = await          fetch( './assets/data/db.json' )
-          var pJSON      = await pResponse.json( ) 
+  async function getCountries( aURL ) {
 
-          var nRows      = 9999
-          var mCountries = pJSON.countries.filter( (pCountry, i) => { return i < nRows } )
+          var pResponse   =  await          fetch( aURL )
+          var pJSON       =  await pResponse.json( ) 
 
-       return mCountries   
+
+
+
+          var nRows       =  9999
+          var mCountries  =  pJSON.countries.filter( (pCountry, i) => { return i < nRows } )
+
+       return mCountries                // Step 5 
               }
 
+              console.log( mCountries ) // Step 3: mCountries is defined  
       </script> 
 
     </head>
@@ -131,8 +139,7 @@
 
             <script  type="module">
 
-                var  mCountries  =  await getCountries( )     // Must assign mCountries here with await 
-                var  mHTMLrows   =  mCountries.map(  fmtCountry )     
+                var  mHTMLrows   =  mCountries.map(  fmtCountry )  // Step 4: mCountries is a promise  
 
                      mHTMLrows.push( 
                `<tr id="Rend" class="lastRow" >

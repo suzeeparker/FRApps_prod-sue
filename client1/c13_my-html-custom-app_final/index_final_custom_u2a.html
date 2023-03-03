@@ -13,23 +13,28 @@
       <link rel="stylesheet"    href="https://fonts.googleapis.com/css?family=Roboto+Slab" >
       <link rel="stylesheet"    href="index_final_custom.css">
 
-<!--  <script type="application/javascript"  src="./assets/data/db.json.js" ></script>
-      <script>
-              mCountries  =  pJSON.countries 
-      </script> 
--->
-      <script>                          // Can't be a module since it is executed last 
+<!--  <script  type="application/javascript"   src="./assets/data/db.json.js" ></script> -->
 
-  async function getCountries( ) {      // Must define async function to use with await below  
 
-          var pResponse  = await          fetch( './assets/data/db.json' )
-          var pJSON      = await pResponse.json( ) 
 
-          var nRows      = 9999
-          var mCountries = pJSON.countries.filter( (pCountry, i) => { return i < nRows } )
 
-       return mCountries   
-              }
+      <script type="module">
+
+
+
+
+
+          var pResponse   =  await          fetch( './assets/data/db.json'    )
+          var pJSON       =  await pResponse.json( ) 
+
+
+
+
+          var nRows       =  9999
+//        var mCountries  =  pJSON.countries.filter( (pCountry, i) => { return i < nRows } )
+       window.mCountries  =  pJSON.countries.filter( (pCountry, i) => { return i < nRows } )
+
+
 
       </script> 
 
@@ -129,10 +134,9 @@
               <tbody id="Countries"></tbody>
             </table>
 
-            <script  type="module">
+            <script>
 
-                var  mCountries  =  await getCountries( )     // Must assign mCountries here with await 
-                var  mHTMLrows   =  mCountries.map(  fmtCountry )     
+                var  mHTMLrows   =  mCountries.map(  fmtCountry )
 
                      mHTMLrows.push( 
                `<tr id="Rend" class="lastRow" >
