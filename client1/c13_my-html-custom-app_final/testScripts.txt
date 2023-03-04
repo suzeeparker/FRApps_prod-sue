@@ -1,0 +1,85 @@
+
+testScripts_u2 -- actual script order
+-----------------------------------------------------------------------------------------------------
+   <script>
+// Head Normal Script 1: must be at end of <body> tag")  // no workie before <body> is rendered 
+// Head Normal Script 2: can see var, ${aScript7}, assigned in any script, but must be after document.onload. // no workie with Module scripts 
+   Head Module Script 5: can be before targeted <div> tag, but executes after <body> is rendered and Normal scripts are executed   
+   Head Module Script 6: execute after: 'await (await fetch( './assets/data/db.json' )).json()   
+   Head Module Script 6: can see var, ${aScript6} and ${nCountries}, assigned in same Module script
+// Head Normal Script 8: can see var, ${aScript7}, assigned in any script") // no workie after Module Script 7") 
+   Head Module Script 9: can see var, ${aScript7}, assigned in any script, but must be after document.onload  
+   Body Normal Script 3: can see var, ${aScript8}, assigned in previous normal script 8`
+   Body Module Script 7: can be anywhere, but executes after <body> is rendered and Normal scripts are executed   
+   Body Module Script 7: can see var, window.${aScript6} and but not window.${nCountries} awaiting fetch()`  
+   Botm Normal Script 4: must be at end of <body> tag, before or after functions are defined in same script
+// Botm Normal Script 4: must be at end of <body> tag  // no workie if functions are defined in later Normal script 
+
+testScripts_u2 -- with await fetch 
+-----------------------------------------------------------------------------------------------------
+   Body Normal Script 3: must be after targeted <div> tag, and after functions are defined
+   Body Normal Script 3: can see var, {aScript8}, assigned in previous Normal script 8
+   Botm Normal Script 4: must be at end of <body> tag, before or after functions are defined in same script
+   Head Module Script 5: can be before targeted <div> tag, but executes after <body> is rendered and Normal scripts are executed
+   Body Module Script 7: can be anywhere, but executes after <body> is rendered and Normal scripts are executed
+   Body Module Script 7: can see var, window.{aScript6} and but not window.{nCountries = undefined} awaiting fetch()
+   Head Module Script 9: can see var, ${aScript7}, assigned in any script, but must be after document.onload
+   Head Module Script 6: execute after: 'await (await fetch( './assets/data/db.json' )).json()
+   Head Module Script 6: can see var, {aScript6} and {nCountries = 239}, assigned in same Module script
+
+testScripts_u1 -- no await fetch 
+-----------------------------------------------------------------------------------------------------
+   Body Normal Script 3: must be after targeted <div> tag, and after functions are defined
+   Body Normal Script 3: can see var, {aScript8}, assigned in previous normal script 8
+   Botm Normal Script 4: must be at end of <body> tag, before or after functions are defined in same script
+   Head Module Script 5: can be before targeted <div> tag, but executes after <body> is rendered and normal scripts are executed
+// Head Module Script 6: execute after: 'await (await fetch( './assets/data/db.json' )).json()
+   Head Module Script 6: can see var, {aScript6} and {nCountries = undefined}, assigned in same module script
+   Body Module Script 7: can be anywhere, but executes after <body> is rendered and normal scripts are executed
+   Body Module Script 7: can see var, window.{aScript6} and window.{nCountries = 0}
+   Head Module Script 9: can see var, ${aScript7}, assigned in any script, but must be after document.onload
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+  <head>
+    <script>
+  		function  say1(a) { ... } 
+//          say1("Head Normal Script 1: must be at end of <body> tag")  // no workie before <body> is rendered 
+        window.onload = function( event ) {  // won't execute if any Module Scripts are executed 
+//          say1("Head Normal Script 2: can see var, ${aScript7}, assigned in any script, but must be after document.onload. // no workie with Module scripts  
+    </script>
+    <script type="module">
+            say2("Head Module Script 5: can be before targeted <div> tag, but executes after <body> is rendered and normal scripts are executed")   
+            say2("Head Module Script 6: execute after: 'await (await fetch( './assets/data/db.json' )).json()")   
+            say2(`Head Module Script 6: can see var, ${aScript6} and ${nCountries}, assigned in same module script`)
+    </script>            
+    <script>
+        window.onload = function( event ) {  // executes after previous onload in Normal scripts, but not after Module scripts
+//          say1("Head Normal Script 8: can see var, ${aScript7}, assigned in any script") // no workie after Module Script 7") 
+    </script>            
+    <script type="module">
+        window.onload = function( event ) { // executes after previous onload in Module scripts, before Normal scripts
+            say1("Head Module Script 9: can see var, ${aScript7}, assigned in any script, but must be after document.onload")  }
+    </script>            
+  </head>
+  
+  <body>
+    <script>
+            say1("Body Normal Script 3: must be after targeted <div> tag, and after functions are defined")
+            say1(`Body Normal Script 3: can see var, ${aScript8}, assigned in previous normal script 8` )
+    </script>            
+    <script type="module">
+            say2("Body Module Script 7: can be anywhere, but executes after <body> is rendered and normal scripts are executed")   
+            say2(`Body Module Script 7: can see var, window.${aScript6} and but not window.${nCountries} awaiting fetch()` ) 
+    </script>            
+    <script>
+//          say2("Botm Normal Script 4: must be at end of <body> tag") // no workie if functions are defined in later normal script 
+    </script>            
+    <script>
+            say2("Botm Normal Script 4: must be at end of <body> tag, before or after functions are defined in same script")
+        function  say2(a) { ... }
+    </script>
+  <body>
+    
+    
+    

@@ -6,15 +6,15 @@
       p { margin-bottom: -12px; margin-left:105px; text-indent: -105px; }
     </style>
     <script>
-//          say1("Head Normal Script 1: must be at end of <body> tag")  // no workie before <body> is rendered 
         var aScript1="{aScript1}"
   function  say1(a) { 
             pDiv = document.getElementById("sayIt")
             pDiv.innerHTML += "<p>say1: " + a.replace( /<(.+?)/g, '&lt;$1' ).replace( /(.+?)>/g, '$1&gt;') + "</p>"
             console.log(a) 
             }
+//          say1("Head Normal Script 1: must be at end of <body> tag")  // no workie before <body> is rendered 
         window.onload = function( event ) {  // won't execute if any Module Scripts are executed 
-            say1("Head Normal Script 1: must be after document.onload. can see var, ${aScript7}, assigned in any script") 
+//          say1("Head Normal Script 2: can see var, ${aScript7}, assigned in any script, but must be after document.onload. // no workie with Module scripts  
             } 
     </script>
     <script type="module">
@@ -24,18 +24,18 @@
         var nCountries ="{nCountries = undefined}"
      window.nCountries =  nCountries
 
-            say2("Head Module Script 5: can be before targeted <div> tag, but executes after <body> is rendered and normal scripts are executed")   
+            say2("Head Module Script 5: can be before targeted <div> tag, but executes after <body> is rendered and Normal scripts are executed")   
 //      var pResponse  =  await fetch( "./assets/data/db.json" )
 //      var nCountries =`{nCountries = ${ await pResponse.json().countries.length }}`
 //      var pJSON      =  await pResponse.json()
         var pJSON      = { countries: [ ] }
-//      var nCountries =`{nCountries = ${ pJSON.countries.length }}`
-     window.nCountries =`{nCountries = ${ pJSON.countries.length }}` // needs to be re-assigned
+//      var nCountries =`{nCountries = ${ pJSON.countries.length }}` // aren't vars local to each module??  
+     window.nCountries =`{nCountries = ${ pJSON.countries.length }}` // needs to be re-assigned into windows global scope if no await???
 
-//          say1("Head Module Script 6: can be before targeted <div> tag, but executes after <body> is rendered and normal scripts are executed")   
+//          say1("Head Module Script 6: can be before targeted <div> tag, but executes after <body> is rendered and Normal scripts are executed")   
  
-            say2(`Head Module Script 6: can see var, ${aScript6} and ${nCountries}, assigned in same module script`)
-//          say2(`Head Module Script 6: can't see var, ${aScript7}, assigned in a later module script`)
+            say2(`Head Module Script 6: can see var, ${aScript6} and ${nCountries}, assigned in same Module script`)
+//          say2(`Head Module Script 6: can't see var, ${aScript7}, assigned in a later Module script`)
 /*      window.onload = function( event ) {
             say1("Head Module Script 6: must be after document.onload. can see var, ${aScript7}, assigned in any script") 
             } */
@@ -61,20 +61,20 @@
     <script>
         var aScript3="{aScript3}"
             say1("Body Normal Script 3: must be after targeted <div> tag, and after functions are defined")
-            say1(`Body Normal Script 3: can see var, ${aScript8}, assigned in previous normal script 8` )
-//          say1(`Body Normal Script 3: can see var, ${aScript5}, assigned in previous normal script 5` )
+            say1(`Body Normal Script 3: can see var, ${aScript8}, assigned in previous Normal script 8` )
+//          say1(`Body Normal Script 3: can see var, ${aScript5}, assigned in previous Normal script 5` )
 //          say1(`Body Normal Script 3: can't see var, ${aScript8}` )        // no workie for vars assigned in previous Module Scripts
 //          say2("Body Normal Script 3: must be after targeted <div> tag,")  // no workie before say2() is defined 
     </script>            
     <script type="module">
         var aScript7="{aScript7}"
-            say2("Body Module Script 7: can be anywhere, but executes after <body> is rendered and normal scripts are executed")   
+            say2("Body Module Script 7: can be anywhere, but executes after <body> is rendered and Normal scripts are executed")   
 //          say2(`Body Module Script 7: can't see var, ${aScript6} and ${nCountries}` ) // no workie for vars assigned in previous Module Scripts   
             say2(`Body Module Script 7: can see var, window.${aScript6} and window.${nCountries}` ) 
     </script>            
     <script>
         var aScript4="{aScript4}"
-//          say2("Botm Normal Script 4: must be at end of <body> tag") // no workie if functions are defined in later normal script 
+//          say2("Botm Normal Script 4: must be at end of <body> tag") // no workie if functions are defined in later Normal script 
     </script>            
     <script>
         var aScript4="{aScript4}"
