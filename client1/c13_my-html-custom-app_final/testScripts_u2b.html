@@ -1,0 +1,72 @@
+
+<html>
+  <head>
+    <style>
+      #sayIt { font-size: 24px; font-family:courier; }
+      p { margin-bottom: -12px; margin-left:105px; text-indent: -105px; }
+    </style>
+
+    <script type="module"> // functions defined before targeted <div> tag, after <body> is rendered, in Module scripts are not defined ?? 
+
+        var aScript6   ="{aScript6}"
+     window.aScript6   =  aScript6
+
+        var nCountries ="{nCountries = undefined}"
+     window.nCountries =  nCountries
+
+            say2("Head Module Script 5: defined before targeted <div> tag, after <body> is rendered, in Module scripts can be executed")   
+
+     window.getCountries = getCountries  // but only if functions to use used in later modules are made global ???? 
+
+      async function getCountries() {
+
+        var pResponse  =                   await fetch( "./assets/data/db.json" )
+        var pJSON      =                   await pResponse.json()
+//      var nCountries =`{nCountries = ${  await pResponse.json().countries.length }}` // aren't vars local to each module??  
+       
+//      var pJSON      =                  (await fetch( './assets/data/db.json' )).json() 
+//      var nCountries =`{nCountries = ${ (await pJSON).countries.length }}` // aren't vars local to each module??  
+
+//      var pJSON      =            await (await fetch( './assets/data/db.json' )).json() 
+        var nCountries =`{nCountries = ${        pJSON .countries.length }}` // aren't vars local to each module??  
+//   window.nCountries =`{nCountries = ${        pJSON .countries.length }}` // needs to be re-assigned into windows global scope if no await???
+
+//      var pJSON      =            await (await fetch( './assets/data/db.json' )).json() 
+        var mCountries =           (await (await fetch( './assets/data/db.json' )).json()).countries  
+      
+//          say1("Head Module Script 6: can be before targeted <div> tag, but executes after <body> is rendered and Normal scripts are executed")   
+            say2("Head Module Script 6: execute after: 'await (await fetch( './assets/data/db.json' )).json()")
+            say2(`Head Module Script 6: can see var, ${aScript6} and ${nCountries}, assigned in same Module script`)
+//          say2(`Head Module Script 6: can't see var, ${aScript7}, assigned in a later Module script`)
+
+     return mCountries
+            } 
+             
+    </script> 
+  </head>
+
+  <body>
+ 
+    <div id="sayIt"></div>
+
+    <script type="module">   // Can only use Normal Script functions, not those in any Module scripts 
+//          say1("Body Module Script 7: can be anywhere, but executes after <body> is rendered and Normal scripts are executed")   
+            say2("Body Module Script 7: can be anywhere, but executes after <body> is rendered and Normal scripts are executed")   
+
+        var nCountries =`{nCountries = ${ (await getCountries).length }}` 
+
+//          say2(`Body Module Script 7: can't see var, ${aScript6} and ${nCountries}` ) // no workie for vars assigned in previous Module Scripts   
+            say2(`Body Module Script 7: can see var, window.${aScript6} and but not window.${nCountries} awaiting fetch()` ) 
+//          say3(`Body Module Script 7: can see var, window.${aScript6} and but not window.${nCountries} awaiting fetch()` ) 
+    </script>
+    <script>                 // Must be a Normal script for Module scripts to use it's functions 
+            say2("Botm Normal Script 4: must be at end of <body> tag, before or after functions are defined in same script")
+
+  function  say2(a) { 
+            pDiv = document.getElementById("sayIt")
+            pDiv.innerHTML += "<p>say2: " + a.replace( /<(.+?)/g, '&lt;$1' ).replace( /(.+?)>/g, '$1&gt;') + "</p>"
+            console.log(a) 
+            }
+    </script>
+  </body>
+</html>  

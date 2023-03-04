@@ -1,0 +1,65 @@
+
+<html>
+  <head>
+    <style>
+      #sayIt { font-size: 24px; font-family:courier; }
+      p { margin-bottom: -12px; margin-left:105px; text-indent: -105px; }
+    </style>
+    <script type="module">
+
+        var aScript6   ="{aScript6}"
+     window.aScript6   =  aScript6
+
+        var nCountries ="{nCountries = undefined}"
+     window.nCountries =  nCountries
+
+            say2("Head Module Script 5: can be before targeted <div> tag, but executes after <body> is rendered and Normal scripts are executed")   
+        var pJSON      =        (await fetch( './assets/data/db.json' )).json() 
+        var pJSON      =  await (await fetch( './assets/data/db.json' )).json() 
+        var nCountries =`{nCountries = ${ pJSON.countries.length }}` // aren't vars local to each module??  
+//   window.nCountries =`{nCountries = ${ pJSON.countries.length }}` // needs to be re-assigned into windows global scope if no await???
+
+            say1("Head Module Script 6: execute after: 'await (await fetch( './assets/data/db.json' )).json()")
+            say2(`Head Module Script 6: can see var, ${aScript6} and ${nCountries}, assigned in same Module script`)
+
+  function  say1(a) { 
+            pDiv = document.getElementById("sayIt")
+            pDiv.innerHTML += "<p>say2: " + a.replace( /<(.+?)/g, '&lt;$1' ).replace( /(.+?)>/g, '$1&gt;') + "</p>"
+            console.log(a) 
+            }
+
+    </script>            
+  </head>
+
+  <body>
+ 
+    <div id="sayIt"></div>
+
+    <script type="module">   // Can only use Normal Script functions, not those in any Module scripts 
+
+        var aScript7="{aScript7}"
+//          say1("Body Module Script 7: can be anywhere, but executes after <body> is rendered and Normal scripts are executed")   
+            say2("Body Module Script 7: can be anywhere, but executes after <body> is rendered and Normal scripts are executed")   
+            say2(`Body Module Script 7: can see var, window.${aScript6} and but not window.${nCountries} awaiting fetch()` ) 
+//          say3(`Body Module Script 7: can see var, window.${aScript6} and but not window.${nCountries} awaiting fetch()` ) 
+
+    </script>
+    <script>                 // Must be a Normal script for Module scripts to use it's functions 
+
+  function  say2(a) { 
+            pDiv = document.getElementById("sayIt")
+            pDiv.innerHTML += "<p>say2: " + a.replace( /<(.+?)/g, '&lt;$1' ).replace( /(.+?)>/g, '$1&gt;') + "</p>"
+            console.log(a) 
+            }
+    </script>
+    <script type="module">   // Can't define Module Script functions to be used in any other scripts 
+
+  function  say3(a) { 
+            pDiv = document.getElementById("sayIt")
+            pDiv.innerHTML += "<p>say3: " + a.replace( /<(.+?)/g, '&lt;$1' ).replace( /(.+?)>/g, '$1&gt;') + "</p>"
+            console.log(a) 
+            }
+    </script>
+
+  </body>
+</html>  
