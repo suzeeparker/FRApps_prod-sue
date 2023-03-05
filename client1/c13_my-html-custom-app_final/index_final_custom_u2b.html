@@ -14,20 +14,25 @@
      window.nCountries =  nCountries
 
             say2("Head Module Script 5: can be before targeted <div> tag, but executes after <body> is rendered and Normal scripts are executed")   
-        var pJSON      =        (await fetch( './assets/data/db.json' )).json() 
-        var pJSON      =  await (await fetch( './assets/data/db.json' )).json() 
-        var nCountries =`{nCountries = ${ pJSON.countries.length }}` // aren't vars local to each module??  
-//   window.nCountries =`{nCountries = ${ pJSON.countries.length }}` // needs to be re-assigned into windows global scope if no await???
 
-            say1("Head Module Script 6: execute after: 'await (await fetch( './assets/data/db.json' )).json()")
-            say2(`Head Module Script 6: can see var, ${aScript6} and ${nCountries}, assigned in same Module script`)
+     window.getCountries= getCountries           // need to make functions, to be used in later Module scripts, global 
+      async function getCountries( nRows ) {     // need to await getCountries in Module script below 
+
+        var mCountries = (await (await fetch( './assets/data/db.json' )).json()).countries  
+        var nCountries =`{nCountries = ${ mCountries.length }}` 
+      
+//          say1("Head Module Script 6: can be before targeted <div> tag, but executes after <body> is rendered and Normal scripts are executed")   
+            say1("Head Module Script 6: execute: `await (await fetch( './assets/data/db.json' )).json()` in function getCountries()")
+//          say2(`Head Module Script 6: can see var, ${aScript6}, and var, ${nCountries}, assigned in same Module script`)
+
+     return mCountries
+            } 
 
   function  say1(a) { 
             pDiv = document.getElementById("sayIt")
             pDiv.innerHTML += "<p>say2: " + a.replace( /<(.+?)/g, '&lt;$1' ).replace( /(.+?)>/g, '$1&gt;') + "</p>"
             console.log(a) 
             }
-
     </script>            
   </head>
 
@@ -40,9 +45,12 @@
         var aScript7="{aScript7}"
 //          say1("Body Module Script 7: can be anywhere, but executes after <body> is rendered and Normal scripts are executed")   
             say2("Body Module Script 7: can be anywhere, but executes after <body> is rendered and Normal scripts are executed")   
-            say2(`Body Module Script 7: can see var, window.${aScript6} and but not window.${nCountries} awaiting fetch()` ) 
-//          say3(`Body Module Script 7: can see var, window.${aScript6} and but not window.${nCountries} awaiting fetch()` ) 
 
+        var mCountries =  await getCountries( ) 
+        var nCountries =`{nCountries = ${ mCountries.length }}` 
+
+            say2(`Body Module Script 8: can see var, ${aScript6}, and var, ${nCountries}, after await getCountries()`)
+//          say3(`Body Module Script 8: can see var, ${aScript6}, and var, ${nCountries}, after await getCountries()`) 
     </script>
     <script>                 // Must be a Normal script for Module scripts to use it's functions 
 

@@ -68,9 +68,12 @@
     </script>            
     <script type="module">
         var aScript7="{aScript7}"
+//          say1("Body Module Script 7: can be anywhere, but executes after <body> is rendered and Normal scripts are executed")   
             say2("Body Module Script 7: can be anywhere, but executes after <body> is rendered and Normal scripts are executed")   
-//          say2(`Body Module Script 7: can't see var, ${aScript6} and ${nCountries}` ) // no workie for vars assigned in previous Module Scripts   
-            say2(`Body Module Script 7: can see var, window.${aScript6} and but not window.${nCountries} awaiting fetch()` ) 
+
+//          say2(`Body Module Script 8: can't see var, ${aScript6} and ${nCountries}` ) // no workie for vars assigned in previous Module Scripts   
+            say2(`Body Module Script 8: can see var, window.${aScript6}, and but not var, window.${nCountries}, awaiting fetch()` ) 
+//          say3(`Body Module Script 8: can see var, window.${aScript6}, and but not var, window.${nCountries}, awaiting fetch()` ) 
     </script>            
     <script>
         var aScript4="{aScript4}"

@@ -1,5 +1,5 @@
 
-testScripts_u2 -- actual script order
+testScripts_u2 -- actual script order for with await fetch
 -----------------------------------------------------------------------------------------------------
    <script>
 // Head Normal Script 1: must be at end of <body> tag")  // no workie before <body> is rendered 
@@ -11,23 +11,24 @@ testScripts_u2 -- actual script order
    Head Module Script 9: can see var, ${aScript7}, assigned in any script, but must be after document.onload  
    Body Normal Script 3: can see var, ${aScript8}, assigned in previous normal script 8`
    Body Module Script 7: can be anywhere, but executes after <body> is rendered and Normal scripts are executed   
-   Body Module Script 7: can see var, window.${aScript6} and but not window.${nCountries} awaiting fetch()`  
-   Botm Normal Script 4: must be at end of <body> tag, before or after functions are defined in same script
+// Body Module Script 8: can't see var, ${aScript6} and ${nCountries} // no workie for vars assigned in previous Module Scripts   
+   Body Module Script 8: can see var, window.${aScript6}, and but not var, window.${nCountries}, awaiting fetch()
 // Botm Normal Script 4: must be at end of <body> tag  // no workie if functions are defined in later Normal script 
+   Botm Normal Script 4: must be at end of <body> tag, before or after functions are defined in same script
 
-testScripts_u2 -- with await fetch 
+testScripts_u2 -- run with await fetch 
 -----------------------------------------------------------------------------------------------------
    Body Normal Script 3: must be after targeted <div> tag, and after functions are defined
    Body Normal Script 3: can see var, {aScript8}, assigned in previous Normal script 8
    Botm Normal Script 4: must be at end of <body> tag, before or after functions are defined in same script
    Head Module Script 5: can be before targeted <div> tag, but executes after <body> is rendered and Normal scripts are executed
    Body Module Script 7: can be anywhere, but executes after <body> is rendered and Normal scripts are executed
-   Body Module Script 7: can see var, window.{aScript6} and but not window.{nCountries = undefined} awaiting fetch()
+   Body Module Script 8: can see var, window.${aScript6}, and but not var, window.${nCountries}, awaiting fetch()
    Head Module Script 9: can see var, ${aScript7}, assigned in any script, but must be after document.onload
    Head Module Script 6: execute after: 'await (await fetch( './assets/data/db.json' )).json()
    Head Module Script 6: can see var, {aScript6} and {nCountries = 239}, assigned in same Module script
 
-testScripts_u1 -- no await fetch 
+testScripts_u1 -- run with no await fetch 
 -----------------------------------------------------------------------------------------------------
    Body Normal Script 3: must be after targeted <div> tag, and after functions are defined
    Body Normal Script 3: can see var, {aScript8}, assigned in previous normal script 8
@@ -39,7 +40,31 @@ testScripts_u1 -- no await fetch
    Body Module Script 7: can see var, window.{aScript6} and window.{nCountries = 0}
    Head Module Script 9: can see var, ${aScript7}, assigned in any script, but must be after document.onload
 
+testScripts_u2b -- run with async getCountgries()
+-----------------------------------------------------------------------------------------------------
+   Botm Normal Script 4: must be at end of <body> tag, before or after functions are defined in same script
+   Head Module Script 5: defined before targeted <div> tag, after <body> is rendered, in Module scripts can be executed
+   Body Module Script 7: can be anywhere, but executes after <body> is rendered and Normal scripts are executed
+   Head Module Script 9: can see var, ${aScript7}, assigned in any script, but must be after document.onload
+   Head Module Script 6: execute: `await (await fetch( './assets/data/db.json' )).json()` in function getCountries()
+   Head Module Script 6: can see var, {aScript6}, and var, {nCountries = 239}, assigned in same Module script
+   Body Module Script 8: can see var, {aScript6}, and var, {nCountries = 239}, after await getCountries()
+
+index_final_custom_u2b.html -- run with async getCountries()
+-----------------------------------------------------------------------------------------------------
+   Head Module Script 5: can be before targeted <div> tag, but executes after <body> is rendered and Normal scripts are executed
+   Body Module Script 7: can be anywhere, but executes after <body> is rendered and Normal scripts are executed
+   Head Module Script 6: execute: `await (await fetch( './assets/data/db.json' )).json()` in function getCountries()
+   Body Module Script 8: can see var, {aScript6}, and var, {nCountries = 239}, after await getCountries()
+
+
+
+
+
 -----------------------------------------------------------------------------------------------------------------------------------
+
+testScripts_u2 -- actual script order
+-----------------------------------------------------------------------------------------------------
 
   <head>
     <script>
@@ -70,7 +95,8 @@ testScripts_u1 -- no await fetch
     </script>            
     <script type="module">
             say2("Body Module Script 7: can be anywhere, but executes after <body> is rendered and normal scripts are executed")   
-            say2(`Body Module Script 7: can see var, window.${aScript6} and but not window.${nCountries} awaiting fetch()` ) 
+//          say2(`Body Module Script 8: can't see var, ${aScript6} and ${nCountries}` ) // no workie for vars assigned in previous Module Scripts   
+            say2(`Body Module Script 8: can see var, window.${aScript6}, and but not var, window.${nCountries}, awaiting fetch()` ) 
     </script>            
     <script>
 //          say2("Botm Normal Script 4: must be at end of <body> tag") // no workie if functions are defined in later normal script 
