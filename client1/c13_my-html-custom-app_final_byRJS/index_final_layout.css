@@ -4,37 +4,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
 
-/*=======================================*/
+/*=============================================*/
 /* root REPLACE Point - :root */
-/*-----------------------------------------
+/*----------------------------------------------
 :root selector for variables
--------------------------------------------*/
+-----------------------------------------------*/
 :root {
-  --Body_background-color: #E5E4E2; /*platinum*/
- 
-  --Header_background-color: #FF7034; /*dark orange*/
-  --Header_hover-color: white;
-  --HeaderLogo-image: url( 'assets/images/formr-logo-blue.gif' );
-  --HeaderLogo_margin: 0px 0 0 30px;
-  --HeaderLogo-FontFamily: "Roboto Slab";
-  --HeaderList-font-size: 1.2rem;
-
-  --Section1_background-color: whitesmoke;
-  --Section1_background-image: url( 'assets/images/monaco-blue-soft.jpg' );
-
-  --Section2_background-color: whitesmoke;
-  --Section2Paragraph-font-color: #ff7034;  /* dark orange */
-
-  --Footer_background-color: #FF7034; /*dark orange*/
-  --Footer_hover-color: white;
-  --FooterList-font-size: .9rem;  
+    --Body_background-color: #E5E4E2; /*platinum*/
+   
+    --Header_background-color: red;
+    --Header_hover-color: white;
+    --HeaderLogo-image: "";
+    --HeaderLogo_margin: 35px 0 0 0px;
+    --HeaderLogo-FontFamily: "Roboto Slab";
+    --HeaderList-font-size: 1.2rem;
   
-  --GlobalFontFamily: "Frank Ruhl Libre", "EB Garamond";
+    --Section1_background-color: blue;
+    --Section1_background-image: url( 'assets/images/monaco-blue-soft.jpg' );
+  
+    --Section2_background-color: lightgray;
+    --Section2Paragraph-font-color: #ff7034;  /* dark orange */
+  
+    --Footer_background-color:green;
+    --Footer_hover-color: white;
+    --FooterList-font-size: .9rem;  
+    
+    --GlobalFontFamily: "Frank Ruhl Libre", "EB Garamond";
 
-  --Button_Logo_font-color: whitesmoke;
+    --Button_Logo_font-color: whitesmoke;
 } 
-/* END REPLACE :root =====================*/
-
+/* END REPLACE :root ==========================*/
 
 
 /*===============================================*/
@@ -96,30 +95,40 @@ The .Header properites
 
 /*===============================================*/
 /* H-2 START BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
-/*=======================================*/
-/* H-2 INSERT Point - .HeaderLogo */
-/*-----------------------------------------
+/*===============================================*/
+/* H2 INSERT Point - .HeaderLogo */
+/*------------------------------------------------
 The .HeaderLogo properites
-------------------------------------------*/
+-------------------------------------------------*/
 .HeaderLogo {
-  width: 224px;
-  height: 64px;
-  margin-bottom: 0px;
-  background-image: var(--HeaderLogo-image);
-  background-size: 224px 64px;
-  background-repeat: no-repeat;
-  margin: var(--HeaderLogo_margin);
-  font-size: 25px;
-  font-weight: 600;
+  margin-left: 5px;
+  padding-left: 25px;
 }
 
-/*=======================================*/
+/*===============================================*/
+/* INSERT Point - .HeaderLogo a */
+/*------------------------------------------------
+The .HeaderLogo a properites
+-------------------------------------------------*/
+.HeaderLogo a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: var(--HeaderLogo-FontFamily);
+  font-weight: 600;    
+  color: var(--Button_Logo_font-color);
+  background: blue ;
+  padding: 0.5rem .5rem;
+  border-radius: 8px;
+  box-shadow: 4px 4px black;
+}
+
+/*===============================================*/
 /* INSERT Point - .HeaderSpacer */
-/*-----------------------------------------
+/*-------------------------------------------------
 The .HeaderSpacer properites
-------------------------------------------*/
+-------------------------------------------------*/
 .HeaderSpacer {
-    flex: 1;
+  flex: 1;
 }
 /* H-2 END BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
 
@@ -205,21 +214,18 @@ The @keyframes wiggle properties
 /* H-5 END BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
 
 
+
 /*===============================================*/
 /* S1R-1 REPLACE Point - Section1 */
 /*------------------------------------------------
 The .Section1 properites
 -------------------------------------------------*/
 .Section1 {
-  background: var(--Section1_background-image);
-  background-color: var(--Section1_background-color);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 46%;
+  background: var(--Section1_background-color);
+  width: 100%; /*was 300px*/
+  height: 46%; /*was 100px*/
   position: relative;
-  top: 80px;
+  top: 80px; /*<---ADD to adjust the top position*/
 }
 /* END S1R-1 .Section1 ===========================*/
 
@@ -258,46 +264,38 @@ The .Section1ImageText::first-letter properties
 The .Section2 properites
 -------------------------------------------------*/
 .Section2 {
-  background-color: #DCDCDC;
+  background: var(--Section2_background-color);
+  width: 100%;
+  height: 46%;
+  position: relative;
+  color: black;
   font-family: var(--GlobalFontFamily);
-  height: 46%;    
-  width: 100%;
-  max-width: 1000px;
-  top: 360px;
-  position: fixed;
-  overflow-y: scroll;
+  font-size: 1.2rem;
+  font-weight: 600;
+  top: 80px; /*<---ADD to adjust the top position*/
 }
-th {
-  position: sticky;
-  top: 0;
-  border-collapse: separate;
-  border-spacing: 0;
-  background: var(--Header_background-color);
-  background: #183582; /*Dark Sky Blue*/
-  color: white;
-}
-.last-row hr {
-  border-top: blue 1px dashed;
-}
-.CountryTable {
-  width: 100%;
-}
-.CountryTable tr th {
-  font-size: 14px;
-  padding-left: 3px;
-}
-.CountryCode-td, 
-.Country-td, 
-.Continent-td, 
-.Area-td, 
-.Population-td {
-  font-size: 14px;
-  text-align: left;
-  padding-left: 3px;
-}
-.lastRow { background: rgb(25,50,125);  height: 30px; }
+/* END S2R-1 .Section2 ===========================*/
 
-/* S2-2 END BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+/*===============================================*/
+/* S2-1 INSERT Point - Section2 h2 */
+/*      DELETE Point - Section2 h2 */
+/*-----------------------------------------------
+The .Section2 h2 properites
+-------------------------------------------------*/
+.Section2 h2 {
+    padding: 1.5;
+    color: black;
+}
+/* END S2-1 .Section2 h2=========================*/
+
+
+/*===============================================*/
+/* S2-2 START BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/* S2-2 INSERT Point - Section2Paragraph */
+
+/*      INSERT Point - Section2Paragraph::first-letter/line */
+/* S2-2 END BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
 
 
 /*===============================================*/
@@ -549,15 +547,6 @@ color: var(--Footer_hover-color);
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 
-/*===============================================*/
-/* DAT DATA START BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^*/
-/* Data Code */
-
-
-/* DATA END BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-
 /*===========================================*/
 /* R-1 START BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
 /* Responsive Code */  
@@ -590,7 +579,7 @@ and (max-width: 540px)
 {
   .HeaderLogo {
       font-size: 1.2rem;
-      margin-left: 70px;
+      margin-left: 50px;
       background-size: 180px 51px;
   }
   .MenuWrap {
@@ -617,7 +606,7 @@ and (max-width: 540px)
   }
   .Section2Paragraph {
     font-size: 75%;
-    margin-top: -20px;
+    margin-top: -40px;
   }
   .Footer {
     display: none;
@@ -645,8 +634,8 @@ and (max-width: 440px)
   }
   .HeaderLogo {
       font-size: .8rem;
-      margin-left: 60px;
-      margin-top: 40px;
+      margin-left: 0px;
+      margin-top: 0px;
       background-size: 144px 41px;
       padding: 10px 0px 20px 70px;
   }
@@ -668,7 +657,6 @@ and (max-width: 440px)
   } 
 }
 /* R-1 END BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/ 
-
 
 
 /* END CSS */

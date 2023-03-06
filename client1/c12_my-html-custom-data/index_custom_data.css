@@ -221,6 +221,9 @@ The .Section1 properites
   position: relative;
   top: 80px;
 }
+.Section1 h2 {
+  padding: 100px 190px 0px 0px;
+}
 /* END S1R-1 .Section1 ===========================*/
 
 
@@ -237,7 +240,6 @@ The .Section1ImageText properties
   font-weight: 800;
   color: lightgray;
   text-shadow: 1px 1px 3px #000000;
-  padding: 80px 250px 20px 0px;
 }
 
 /*===============================================*/
@@ -263,7 +265,7 @@ The .Section2 properites
   height: 46%;    
   width: 100%;
   max-width: 1000px;
-  top: 360px;
+  top: 370px;
   position: fixed;
   overflow-y: scroll;
 }
@@ -276,26 +278,55 @@ th {
   background: #183582; /*Dark Sky Blue*/
   color: white;
 }
-.last-row hr {
-  border-top: blue 1px dashed;
+.lastRow {
+  height: 20px;
+  background: #183582; /*Dark Sky Blue*/
 }
 .CountryTable {
   width: 100%;
 }
 .CountryTable tr th {
-  font-size: 14px;
+  font-size: 16px;
   padding-left: 3px;
+}
+.CountryCode-th {
+  width: 8%;
+  text-align: left;
+}
+.Country-th {
+  width: 40%;
+  text-align: left;
+}
+.Continent-th {
+  width: 22%;
+  text-align: left;
+}
+.Area-th {
+  width: 15%;
+  text-align: right;
+  padding-right: 10px;
+}
+.Population-th {
+  width: 15%;
+  text-align: right;
+  padding-right: 10px;
 }
 .CountryCode-td, 
 .Country-td, 
 .Continent-td, 
 .Area-td, 
 .Population-td {
-  font-size: 14px;
+  font-size: 16px;
   text-align: left;
+  vertical-align: top;
   padding-left: 3px;
 }
-.lastRow { background: rgb(25,50,125);  height: 30px; }
+.Area-td,
+.Population-td {
+  text-align: right;
+  vertical-align: top;
+  padding-right: 10px;
+}
 
 /* S2-2 END BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
 
@@ -548,14 +579,6 @@ color: var(--Footer_hover-color);
 /* HAMBURGER END BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-
-/*===============================================*/
-/* DAT DATA START BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^*/
-/* Data Code */
-
-
-/* DATA END BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 
 /*===========================================*/

@@ -77,7 +77,7 @@ async function fetchCountries( pDiv ) {
 
   function  fmtCountry2( pCountry, i ) {                                                            // .(30208.02.1 RJS Beg Rewrite)
 
-       var  aClass      =   i % 2 == 1 ? "row-even" : "row-odd"
+//       var  aClass      =   i % 2 == 1 ? "row-even" : "row-odd"
        var  abgColor    =   i % 2 == 1 ? '#DCDCDC'  : "lightgray"
 //       var  abgColor    =   i % 2 == 1 ? '#EEEEEE'  : "lightblue"
        var  aFill       =  '<br>\n'.padEnd(21)                                                      // .(30225.03.2 RAM Indent Cities)
@@ -89,7 +89,7 @@ async function fetchCountries( pDiv ) {
        var  nPopulation =   pCountry.Population   //  22720000
 
        var  aHTML       = `
-            <tr Class="${ aClass }" ${aID} style="vertical-align: top; border: 1px solid blue;">
+            <tr Class="${ aClass }" ${aID} >
               <td class="CountryCode-td" bgcolor=${abgColor}> ${ aCode }</td>
               <td class="Country-td" bgcolor=${abgColor}> ${ aName }</td>
               <td class="Continent-td" bgcolor=${abgColor}> ${ aContinent }</td>
