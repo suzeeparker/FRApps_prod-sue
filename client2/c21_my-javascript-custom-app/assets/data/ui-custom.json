@@ -23,12 +23,12 @@
           { "Class": "HeaderNavListItem"   , "URL": "#", "Text": "Links"   }            
         , { "Class": "HeaderNavListItem"   , "URL": "#", "Text": "Cards"   }
         , { "Class": "HeaderNavListItem"   , "URL": "#", "Text": "FAQs"    }
-        , { "Class": "HeaderNavListItemCTA", "URL": "#", "Text": "Sign In" }
+        , { "Class": "HeaderNavListItemCTA", "URL": "#", "Text": "Sign On" }
              ]
       , "side": [
           { "Class": "MenuListItem"    , "Id": "H-PHLink"   , "URL": "#", "Text": "Home"    }            
         , { "Class": "MenuListItemLine", "Id": "PHLinkLine"    }	 		 
-        , { "Class": "MenuListItem"    , "Id": "H-PHLinkCTA", "URL": "#", "Text": "Sign In" }
+        , { "Class": "MenuListItem"    , "Id": "H-PHLinkCTA", "URL": "#", "Text": "Sign On" }
         , { "Class": "MenuListItem"    , "Id": "H-PHLink"   , "URL": "#", "Text": "Links"   }
         , { "Class": "MenuListItem"    , "Id": "H-PHLink"   , "URL": "#", "Text": "Cards"   }
         , { "Class": "MenuListItem"    , "Id": "H-PHLink"   , "URL": "#", "Text": "FAQs"    }
