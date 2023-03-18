@@ -4,12 +4,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
         <title>HTML Custom Apps</title>
-        <link rel="shortcut icon" href="favicon.png">
+        <link rel="shortcut icon" href="assets/images/favicon.png">
         <link rel="stylesheet"    href="https://fonts.googleapis.com/css?family=EB Garamond" >
         <link rel="stylesheet"    href="https://fonts.googleapis.com/css?family=Roboto+Slab" >
-        <link rel="stylesheet"    href="index_final_layout.css">
+        <link rel="stylesheet"    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <link rel="stylesheet"    href="index.css">
+
+    <!-- INSERT Point - DATA FETCHING -->
+    <!-- END INSERT Point - DATA FETCHING -->
     </head>
 
     <body>    
@@ -41,33 +44,27 @@
                 </div>
             </div>
         <!-- END INSERT Point - Responsive -->
-
-            <!-- REPLACE Point Logo -->
+        <!-- REPLACE Point Logo -->
             <div class="HeaderLogo"><a href="#">PH Logo</a></div>
-            <!-- END REPLACE Point - Logo -->
+        <!-- END REPLACE Point - Logo -->
             <div class="HeaderSpacer"></div> 
             <ul class="HeaderNavList">
                 <li class="HeaderNavListItem"><a href=#>PH_Link1</a></li>
                 <li class="HeaderNavListItem"><a href=#>PH_Link2</a></li>
                 <li class="HeaderNavListItem"><a href=#>PH_Link3</a></li>
+                <!-- INSERT Point - Dropdown Menu -->
+                <!-- END INSERT  -  Dropdown Menu -->
                 <li class="HeaderNavListItemCTA"><a href=#>PH_CTA</a></li>
             </ul>
         </div>
     <!-- END REPLACE Point - Header -->
+
 
     <!-- REPLACE Point - Section1 -->
         <div class="Section1">
             <h2 class="Section1ImageText">PH Text Overlay</h2>
         </div>
     <!-- END REPLACE Point - Section1 -->
-    <!-- COUNTRIES INCLUDE DATA-->
-        <!--include using jQuery-->
-        <div id="inc-countries"></div>
-        <script> 
-            $("#inc-countries").load("inc-countries.html");
-        </script> 
-    <!-- END COUNTRIES INCLUDE -->       
-
 
     <!-- REPLACE Point - Section2 -->        
         <div class="Section2">
@@ -90,8 +87,6 @@
             </ul>
         </div>
     <!-- END REPLACE Point - Footer -->
-
-
     </body>
 
 </html>
