@@ -1,0 +1,75 @@
+{ 
+ "layout": { 
+  
+    "header": {
+
+      "menus": { 
+
+        "logo": 
+          { "URL": "#"  
+          , "Style": {
+               "width": "224px",
+               "height": "64px",
+               "margin-bottom": "0px",
+               "background-image": "url( './assets/images/formr-logo-blue.gif' )",
+               "background-size": "224px 64px",
+               "background-repeat": "no-repeat",
+               "margin": "0px 0 0 30px;",
+               "font-size": "25px",
+               "font-weight": "600"
+                }
+             }            
+      , "top": [
+          { "Class": "HeaderNavListItem"   , "URL": "#", "Text": "Links"   }            
+        , { "Class": "HeaderNavListItem"   , "URL": "#", "Text": "Cards"   }
+        , { "Class": "HeaderNavListItem"   , "URL": "#", "Text": "FAQs"    }
+        , { "Class": "HeaderNavListItemCTA", "URL": "#", "Text": "Sign In" }
+             ]
+      , "side": [
+          { "Class": "MenuListItem"    , "Id": "H-PHLink"   , "URL": "#", "Text": "Home"    }            
+        , { "Class": "MenuListItemLine", "Id": "PHLinkLine"    }	 		 
+        , { "Class": "MenuListItem"    , "Id": "H-PHLinkCTA", "URL": "#", "Text": "Sign In" }
+        , { "Class": "MenuListItem"    , "Id": "H-PHLink"   , "URL": "#", "Text": "Links"   }
+        , { "Class": "MenuListItem"    , "Id": "H-PHLink"   , "URL": "#", "Text": "Cards"   }
+        , { "Class": "MenuListItem"    , "Id": "H-PHLink"   , "URL": "#", "Text": "FAQs"    }
+        , { "Class": "MenuListItemLine", "Id": "PHLinkLine"    }	 		 
+        , { "Class": "MenuListItem"    , "Id": "F-PHLink"   , "URL": "#", "Text": "Support" }
+        , { "Class": "MenuListItem"    , "Id": "F-PHLink"   , "URL": "#", "Text": "Terms of Use" }
+        , { "Class": "MenuListItemLine", "Id": "PHLinkLine"    }	 
+             ]
+          }  
+        }  
+  , "navbar": {
+
+        } 
+  , "sections": [ 
+          { "Class": "Section1ImageText", "Text": "My Image & Text" 
+          , "Style": { 
+               "background": "url( './assets/images/monaco-blue-soft.jpg' )",
+               "background-color": "whitesmoke",
+               "background-repeat": "no-repeat",
+               "background-size": "cover",
+               "background-position": "center",
+               "width": "100%",
+               "height": "46%",
+               "position": "relative",
+               "top": "80px"
+             } }
+        , { "Class": "Section2Paragraph"
+          , "Text" : [
+                     "The quick brown fox jumped over the lazy dog.<br>"
+                   , "The quick brown fox jumped over the lazy dog.<br>"
+                   , "The quick brown fox jumped over the lazy dog.<br>"
+                   , "The quick brown fox jumped over the lazy dog." 
+                      ]
+             }
+          ]    
+  , "footer": {
+
+      "items": [
+          { "Class": "FooterNavListItem", "URL": "#", "Text": "Support" }            
+        , { "Class": "FooterNavListItem", "URL": "#", "Text": "Terms of Use" }            
+             ]
+       }
+     }
+  }  
