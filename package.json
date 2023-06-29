@@ -2,10 +2,13 @@
     "name": "example-static-js-app",
     "main": "./client1/c11_my-html-custom-app/library/2_custom/index.html",
     "scripts": {
-        "start": "http-server --cors"
+        "start": "http-server --cors ./client1/c11_my-html-custom-app/library/2_custom/index.html"
     },
     "repository": {
         "type": "git",
         "url": "https://github.com/8020data/FRApps_prod-master"
+    },
+    "dependencies": {
+        "http-server": "^14.1.1"
     }
 }
