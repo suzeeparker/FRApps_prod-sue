@@ -6,6 +6,20 @@
 			},
 		"ghcr.io/devcontainers-contrib/features/live-server:1": {
 			"version": "latest"
+			},
+		"ghcr.io/devcontainers-contrib/features/prettier:1": {
+			"version": "latest"
 			}
-		}
+		},
+    "customizations": {
+		"vscode": {
+			"settings": {
+				"workbench.startupEditor":"readme"
+				}
+			},
+			"extensions": [
+				"live-server", 
+				"prettier"
+			]
+			}
 	}
