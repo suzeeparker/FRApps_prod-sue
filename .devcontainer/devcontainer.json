@@ -1,0 +1,9 @@
+{
+	"image": "mcr.microsoft.com/devcontainers/universal:2",
+	"features": {
+		"ghcr.io/devcontainers-contrib/features/http-server:1": {
+			"version": "latest"
+			}
+		},
+	"postCreateCommand": "npm install http-server"
+}
