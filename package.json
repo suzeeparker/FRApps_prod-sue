@@ -2,7 +2,7 @@
     "name": "example-static-js-app",
     "main": "./client1/c11_my-html-custom-app/library/2_custom/index.html",
     "scripts": {
-        "start": "http-server --cors ./client1/c11_my-html-custom-app/library/2_custom/index.html"
+        "start": "http-server --cors -o index.htmll"
     },
     "repository": {
         "type": "git",

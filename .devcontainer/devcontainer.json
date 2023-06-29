@@ -3,7 +3,10 @@
 	"features": {
 		"ghcr.io/devcontainers-contrib/features/http-server:1": {
 			"version": "latest"
-			}
+		},
+		"ghcr.io/devcontainers-contrib/features/live-server:1": {
+			"version": "latest"
+		}
 		},
 	"postCreateCommand": "npm install http-server"
 }
