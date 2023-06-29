@@ -1,0 +1,14 @@
+{
+    "name": "frapps",
+    "main": "index.html",
+    "scripts": {
+        "start": "http-server --cors -o index.html"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/8020data/FRApps_prod-master"
+    },
+    "dependencies": {
+        "http-server": "^14.1.1"
+    }
+}
