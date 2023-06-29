@@ -1,0 +1,9 @@
+{
+    "name": "My Codespace",
+    "dockerFile": "Dockerfile",
+    "workspaceFolder": "/workspace",
+    "extensions": [
+      "ms-vscode-remote.remote-containers"
+    ],
+    "postCreateCommand": "npm install http-server"
+  }

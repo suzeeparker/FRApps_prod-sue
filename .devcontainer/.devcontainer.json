@@ -1,0 +1,6 @@
+{
+    "name": "FRApps Codespace",
+    "dockerFile": "Dockerfile",
+    "workspaceFolder": "/workspace",
+    "postCreateCommand": "npm install http-server"
+  }
